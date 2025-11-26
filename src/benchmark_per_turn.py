@@ -193,18 +193,34 @@ def process_trajectory_per_turn(traj_id, data, num_turns, batch_size, metadata_f
         
         # 逐轮提取结果并记录
         for turn_idx in range(num_turns):
-            # 统计生成的token数（应该等于原始response）
+            # 统计完整的token数：生成的response + observation
             response_key = f"response_{turn_idx}"
+            
+            # 1. 生成的response token数
             try:
                 response = state.get(response_key, "") if hasattr(state, 'get') else state[response_key]
-                turn_tokens = len(response.split()) if response else 0
+                response_tokens = len(response.split()) if response else 0
             except:
                 # 如果提取失败，使用原始response的token数
                 if turn_idx < len(data["turn_data"]):
                     original_response = data["turn_data"][turn_idx]["original_response"]
-                    turn_tokens = len(original_response.split())
+                    response_tokens = len(original_response.split())
                 else:
-                    turn_tokens = 0
+                    response_tokens = 0
+            
+            # 2. Observation token数（用户输入）
+            if turn_idx < len(data["turn_data"]):
+                observation_tokens = len(data["turn_data"][turn_idx]["next_observation"].split())
+            else:
+                observation_tokens = 0
+            
+            # 3. 第一轮还要加上system和first_user_msg
+            if turn_idx == 0:
+                system_tokens = len(data["system_msg"].split())
+                first_user_tokens = len(data["first_user_msg"].split())
+                turn_tokens = system_tokens + first_user_tokens + response_tokens + observation_tokens
+            else:
+                turn_tokens = response_tokens + observation_tokens
             
             # 获取这一轮的env_time
             env_time = data["turn_data"][turn_idx]["env_time"] if turn_idx < len(data["turn_data"]) else 0

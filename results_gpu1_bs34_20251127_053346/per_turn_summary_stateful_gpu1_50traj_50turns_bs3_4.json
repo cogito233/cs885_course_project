@@ -1,0 +1,44 @@
+{
+  "model": "Qwen2.5-14B",
+  "gpu": 1,
+  "num_trajectories": 50,
+  "num_turns": 50,
+  "model_load_time": 46.034769773483276,
+  "timestamp": "2025-11-27 06:32:17",
+  "optimization": "Stateful KV Cache + Regex Force Generate + Sleep Env Time",
+  "note": "Use regex to lock output to original response (real generate time), sleep env_time between turns, KV cache automatically reused",
+  "throughput_metric": "sliding_window (10s) reflects real-time performance",
+  "metadata_file": "per_turn_metrics_stateful_gpu1_50traj_50turns_bs3_4.jsonl",
+  "results": [
+    {
+      "batch_size": 3,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 1856.3525013923645,
+      "avg_time_per_traj": 37.12705002784729,
+      "throughput_traj_per_sec": 0.026934539621379722,
+      "throughput_token_per_sec": 92.44149474374493,
+      "total_tokens": 171604,
+      "avg_tokens_per_traj": 3432.08,
+      "avg_tokens_per_turn": 68.6416,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    },
+    {
+      "batch_size": 4,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 1602.461049079895,
+      "avg_time_per_traj": 32.0492209815979,
+      "throughput_traj_per_sec": 0.031202006456699287,
+      "throughput_token_per_sec": 107.08903040016676,
+      "total_tokens": 171606,
+      "avg_tokens_per_traj": 3432.12,
+      "avg_tokens_per_turn": 68.6424,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    }
+  ]
+}

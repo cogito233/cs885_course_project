@@ -1,0 +1,93 @@
+[06:43:03] ======================================================================
+[06:43:03] 🔬 Stateful KV Cache 版本 - Regex Force Generate + Sleep Env Time
+[06:43:03] ======================================================================
+[06:43:03] 🚀 核心优化: 避免每轮 full prefill，Runtime 自动复用 KV
+[06:43:03]    → 节省 >99% 的 prefill 计算，预计吞吐提升 3-4x
+[06:43:03] 💡 Regex Force Generate: 使用regex锁死输出为原始response
+[06:43:03]    → 既有真实的generate时间，又确保输出完全一致
+[06:43:03] ⏱️  Sleep Env Time: 每轮之间sleep环境执行时间（模拟真实场景）
+[06:43:03] 📊 追踪: 滑动窗口吞吐量（10秒窗口，带衰减）
+[06:43:03] ======================================================================
+[06:43:03] 🤖 模型: Qwen2.5-14B (128k上下文)
+[06:43:03] 🎯 配置: GPU 3 | 50条轨迹 | 50轮对话
+[06:43:03] 🔢 测试: Batch Size = [16, 64]
+[06:43:03] ======================================================================
+[06:43:03] 
+[1/3] 加载...
+[06:43:03] ✓ 50条轨迹
+[06:43:03] 
+[2/3] 加载模型...
+[06:43:03] 优化配置: 提高显存利用率
+[06:43:03] 使用端口: 30030
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-27 06:43:31] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:00<00:05,  1.25it/s]
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:01<00:04,  1.25it/s]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:02<00:03,  1.32it/s]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:03<00:03,  1.33it/s]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:03<00:02,  1.35it/s]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:04<00:01,  1.36it/s]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:05<00:00,  1.36it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:05<00:00,  1.63it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:05<00:00,  1.43it/s]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   3%|▎         | 1/36 [00:00<00:07,  4.97it/s]Capturing batches (bs=248 avail_mem=85.70 GB):   3%|▎         | 1/36 [00:00<00:07,  4.97it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   3%|▎         | 1/36 [00:00<00:07,  4.97it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   8%|▊         | 3/36 [00:00<00:03, 10.00it/s]Capturing batches (bs=232 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:03, 10.00it/s]Capturing batches (bs=224 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:03, 10.00it/s]Capturing batches (bs=224 avail_mem=85.68 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.77it/s]Capturing batches (bs=216 avail_mem=85.67 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.77it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.77it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.95it/s]Capturing batches (bs=200 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.95it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.95it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  25%|██▌       | 9/36 [00:00<00:01, 13.92it/s]Capturing batches (bs=184 avail_mem=85.64 GB):  25%|██▌       | 9/36 [00:00<00:01, 13.92it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  25%|██▌       | 9/36 [00:00<00:01, 13.92it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  31%|███       | 11/36 [00:00<00:01, 14.61it/s]Capturing batches (bs=168 avail_mem=85.62 GB):  31%|███       | 11/36 [00:00<00:01, 14.61it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  31%|███       | 11/36 [00:00<00:01, 14.61it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  36%|███▌      | 13/36 [00:00<00:01, 14.71it/s]Capturing batches (bs=152 avail_mem=85.61 GB):  36%|███▌      | 13/36 [00:00<00:01, 14.71it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  36%|███▌      | 13/36 [00:01<00:01, 14.71it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.73it/s]Capturing batches (bs=136 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.73it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.73it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.76it/s]Capturing batches (bs=120 avail_mem=85.58 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.76it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.76it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.86it/s]Capturing batches (bs=104 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.86it/s]Capturing batches (bs=96 avail_mem=85.56 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.86it/s] Capturing batches (bs=96 avail_mem=85.56 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.68it/s]Capturing batches (bs=88 avail_mem=85.55 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.68it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.68it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.54it/s]Capturing batches (bs=72 avail_mem=85.53 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.54it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.54it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  69%|██████▉   | 25/36 [00:01<00:00, 14.65it/s]Capturing batches (bs=56 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:01<00:00, 14.65it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:01<00:00, 14.65it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  75%|███████▌  | 27/36 [00:01<00:00, 14.79it/s]Capturing batches (bs=40 avail_mem=85.50 GB):  75%|███████▌  | 27/36 [00:01<00:00, 14.79it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.79it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  81%|████████  | 29/36 [00:02<00:00, 14.94it/s]Capturing batches (bs=24 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 14.94it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 14.94it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.71it/s]Capturing batches (bs=12 avail_mem=85.47 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.71it/s]Capturing batches (bs=8 avail_mem=85.46 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.71it/s] Capturing batches (bs=8 avail_mem=85.46 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.41it/s]Capturing batches (bs=4 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.41it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.41it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.41it/s]Capturing batches (bs=1 avail_mem=85.44 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.41it/s]Capturing batches (bs=1 avail_mem=85.44 GB): 100%|██████████| 36/36 [00:02<00:00, 14.25it/s]
+[06:44:06] ✓ 62.6秒
+[06:44:06] 
+GPU 3显存使用:
+3, 55734, 143771
+[06:44:06] 
+💡 核心优化说明:
+[06:44:06]   【Stateful KV Cache - 最关键优化】
+[06:44:06]     • 一次性定义整个多轮对话流程
+[06:44:06]     • Runtime 内部维护 KV state，避免每轮 full prefill
+[06:44:06]     • 首轮 prefill + 后续只 decode，大幅降低计算开销（节省 >99% prefill）
+[06:44:06]   【Regex Force Generate + Sleep Env Time】
+[06:44:06]     • Regex锁死输出：既有真实生成时间，又确保输出完全一致
+[06:44:06]     • 每轮之间sleep环境执行时间（模拟真实场景）
+[06:44:06]   【显存管理】
+[06:44:06]     • mem_fraction=0.88: 充分利用显存空间（vs 默认0.8）
+[06:44:06]     • max_total_tokens=131k: 更大的KV cache容量（支持长对话）
+[06:44:06]   【吞吐量计算】
+[06:44:06]     • 滑动窗口（10秒）：反映当前实时性能
+[06:44:06]     • 累计平均：反映整体平均性能
+[06:44:06]   【注意】
+[06:44:06]     • 部分高级调度参数已注释（SGLang 版本兼容性）
+[06:44:06]     • Stateful KV Cache 是最核心优化，效果最显著
+[06:44:06] 
+[3/3] 测试...
+[06:44:06] 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[06:44:06] Batch Size 16
+[06:44:06] 
+======================================================================
+[06:44:06] 测试 Batch Size (并发数): 16
+[06:44:06] ======================================================================
+[06:44:06] 准备数据...
+[06:44:06]   准备: 10/50
+[06:44:06]   准备: 20/50
+[06:44:06]   准备: 30/50
+[06:44:06]   准备: 40/50
+[06:44:06]   准备: 50/50
+[06:44:06] ✓ 准备完成, avg env: 20.22秒
+[06:44:06] 开始并发推理（并发数=16）...
+[06:44:06] 💡 Stateful 模式：Regex Force Generate + Sleep Env Time
+[06:44:06]    → Runtime 内部维护 KV cache，避免重复 prefill（最关键优化）
+[06:44:06]    → Regex锁死输出：既有真实生成时间，又确保输出完全一致
+[06:44:06]    → 每轮之间sleep环境执行时间，模拟真实场景
+[06:44:06]    → SGLang 自动 dynamic batching 处理并发请求
+[06:58:30]   进度: 5/50 (10%) | 轨迹: 0.006条/秒 | Token(滑窗): 47.39tok/秒 | Token(累计): 212.36tok/秒 | 已用时: 863.6秒
+[07:01:15]   进度: 10/50 (20%) | 轨迹: 0.010条/秒 | Token(滑窗): 313.91tok/秒 | Token(累计): 205.50tok/秒 | 已用时: 1029.5秒
+[07:02:32]   进度: 15/50 (30%) | 轨迹: 0.014条/秒 | Token(滑窗): 498.75tok/秒 | Token(累计): 212.96tok/秒 | 已用时: 1105.7秒
