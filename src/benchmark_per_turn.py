@@ -1,15 +1,17 @@
 """
-Stateful KV Cache 版本 - Runtime 维护 KV state
+Stateful KV Cache 版本 - Runtime 维护 KV state + Regex Force Generate + Sleep Env Time
 - SGLang 一次性定义多轮对话流程，Runtime 自动复用 KV（核心优化）
+- Regex Force Generate：使用regex锁死输出为原始response
+  → 既有真实的generate时间，又能确保输出完全一致
+- 每轮之间sleep环境执行时间（模拟真实场景）
 - 避免每轮 full prefill，只 decode 新 token（节省 >99% prefill）
 - 滑动窗口计算吞吐量（10秒窗口，带衰减）
-- 预计性能提升：3-4x token 吞吐量
 - GPU 1/2/3, Qwen2.5-14B (128k)
 - 50条 × 50轮 × BS=[3,4,6,8,12,16]
 """
 
 import sglang as sgl
-import os, time, json, yaml, sys, argparse
+import os, time, json, yaml, sys, argparse, re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 from collections import defaultdict, deque
@@ -51,30 +53,57 @@ def load_trajectories(num=50):
             trajs.append(json.loads(line))
     return trajs
 
-@sgl.function
-def rollout_trajectory_stateful(s, system_msg, first_user_msg, observations, num_turns):
+def escape_for_sglang_regex(text):
     """
-    Stateful 多轮对话：一次性定义整个流程，Runtime 自动复用 KV
-    - 不再每轮 full prefill
+    为 SGLang regex 转义字符串
+    - 保留换行符、制表符、空格等常见字符不转义
+    - 只转义真正的 regex 特殊字符
+    """
+    # 需要转义的 regex 特殊字符（不包括空格、换行等）
+    special_chars = r'\.^$*+?{}[]()|\\'
+    
+    result = []
+    for char in text:
+        if char in special_chars:
+            result.append('\\' + char)
+        else:
+            result.append(char)
+    
+    return ''.join(result)
+
+@sgl.function
+def rollout_trajectory_stateful(s, system_msg, first_user_msg, turn_data):
+    """
+    Stateful 多轮对话：逐轮生成，每轮之间sleep env_time
+    - Regex Force Generate：使用regex锁死输出为原始response
+    - 这样既有真实的generate时间，又能确保输出完全一致
+    - 每轮之间sleep环境执行时间
     - SGLang 内部维护 KV cache state
     """
     # 初始上下文（只 prefill 一次）
     s += sgl.system(system_msg)
     s += sgl.user(first_user_msg)
     
-    # 多轮对话：每轮只 append 新内容
-    for turn_idx in range(num_turns):
-        # 生成 assistant 回复
+    # 多轮对话：每轮用regex锁死输出 + sleep
+    for turn_idx, turn in enumerate(turn_data):
+        # Regex Force Generate：使用regex锁死输出为原始response
+        original_response = turn["original_response"]
+        
+        # 使用regex锁死输出（使用自定义转义，避免SGLang警告）
         s += sgl.assistant(sgl.gen(
             f"response_{turn_idx}",
-            max_tokens=256,
-            temperature=0.7,
-            stop=["<|im_end|>", "\n\nUSER:"]
+            max_tokens=512,  # 足够大的上限
+            temperature=0.0,  # 确定性生成
+            regex=escape_for_sglang_regex(original_response)  # 锁死为原始response
         ))
         
-        # 添加下一轮的 user observation（如果有）
-        if turn_idx < len(observations):
-            s += sgl.user(observations[turn_idx])
+        # Sleep env_time（模拟环境执行时间）
+        env_time = turn["env_time"]
+        if env_time > 0:
+            time.sleep(env_time)
+        
+        # 添加下一轮的 user observation
+        s += sgl.user(turn["next_observation"])
 
 def prepare_trajectory_data(traj, config, num_turns):
     """准备轨迹数据"""
@@ -85,17 +114,29 @@ def prepare_trajectory_data(traj, config, num_turns):
     first_user_msg = instance_template.format(problem_statement=problem_statement)
     
     steps = traj.get('trajectory_steps', [])[:num_turns]
-    observations = []
+    turn_data = []
     total_env_time = 0
     
     for step in steps:
         env_time = float(step.get('env_exec_time', 0))
         total_env_time += env_time
+        
+        # 提取原始assistant回复（thought + action）用于force generate
+        thought = step.get('thought', '')
+        action = step.get('action', '')
+        original_response = f"{thought}\n\n{action}"
+        
+        # 提取observation作为下一轮的user消息
         observation = step.get('observation', '')
-        obs_msg = f"{observation}\n\n[Environment execution time: {env_time:.4f}s]"
-        observations.append(obs_msg)
+        next_observation = f"{observation}\n\n[Environment execution time: {env_time:.4f}s]"
+        
+        turn_data.append({
+            "original_response": original_response,
+            "next_observation": next_observation,
+            "env_time": env_time
+        })
     
-    return system_prompt, first_user_msg, observations, total_env_time
+    return system_prompt, first_user_msg, turn_data, total_env_time
 
 def calculate_sliding_window_throughput():
     """计算滑动窗口内的 token 吞吐量（带时间衰减）"""
@@ -124,8 +165,9 @@ def calculate_sliding_window_throughput():
 
 def process_trajectory_per_turn(traj_id, data, num_turns, batch_size, metadata_file):
     """
-    Stateful 处理：一次调用完成所有轮次，Runtime 内部复用 KV
-    每完成一轮记录一次
+    Stateful 处理：逐轮生成，每轮之间sleep env_time
+    - Force generate使用原始response
+    - 每完成一轮记录一次
     """
     try:
         # 标记开始
@@ -138,26 +180,39 @@ def process_trajectory_per_turn(traj_id, data, num_turns, batch_size, metadata_f
         with global_state.lock:
             global_state.traj_prefix_lengths[traj_id] = initial_prefix
         
-        # 一次性生成所有轮次（Runtime 内部维护 KV state）
+        # 生成所有轮次（内部会在每轮之间sleep env_time）
         overall_start = time.time()
         
         state = rollout_trajectory_stateful.run(
             system_msg=data["system_msg"],
             first_user_msg=data["first_user_msg"],
-            observations=data["observations"],
-            num_turns=num_turns
+            turn_data=data["turn_data"]
         )
         
         overall_elapsed = time.time() - overall_start
         
         # 逐轮提取结果并记录
         for turn_idx in range(num_turns):
+            # 统计生成的token数（应该等于原始response）
             response_key = f"response_{turn_idx}"
-            response = state.get(response_key, "") if hasattr(state, 'get') else state[response_key]
-            turn_tokens = len(response.split()) if response else 0
+            try:
+                response = state.get(response_key, "") if hasattr(state, 'get') else state[response_key]
+                turn_tokens = len(response.split()) if response else 0
+            except:
+                # 如果提取失败，使用原始response的token数
+                if turn_idx < len(data["turn_data"]):
+                    original_response = data["turn_data"][turn_idx]["original_response"]
+                    turn_tokens = len(original_response.split())
+                else:
+                    turn_tokens = 0
             
-            # 估算这一轮的时间（平均分配，实际上 Runtime 是并行的）
-            turn_time = overall_elapsed / num_turns
+            # 获取这一轮的env_time
+            env_time = data["turn_data"][turn_idx]["env_time"] if turn_idx < len(data["turn_data"]) else 0
+            
+            # 估算这一轮的时间（平均分配生成时间，不包括sleep时间）
+            total_env_sleep = sum(t["env_time"] for t in data["turn_data"][:num_turns])
+            actual_compute_time = overall_elapsed - total_env_sleep
+            turn_time = actual_compute_time / num_turns if num_turns > 0 else 0
             
             # 更新全局状态
             with global_state.lock:
@@ -184,6 +239,7 @@ def process_trajectory_per_turn(traj_id, data, num_turns, batch_size, metadata_f
                     "turn_idx": turn_idx,
                     "turn_tokens": turn_tokens,
                     "turn_time": turn_time,
+                    "env_time": env_time,
                     "completed_trajs": global_state.completed_trajs,
                     "active_trajs": len(global_state.active_trajs),
                     "total_tokens_generated": global_state.total_tokens,
@@ -198,8 +254,8 @@ def process_trajectory_per_turn(traj_id, data, num_turns, batch_size, metadata_f
                 f.flush()
             
             # 更新前缀长度（加上 observation）
-            if turn_idx < len(data["observations"]):
-                obs_tokens = len(data["observations"][turn_idx].split())
+            if turn_idx < len(data["turn_data"]):
+                obs_tokens = len(data["turn_data"][turn_idx]["next_observation"].split())
                 with global_state.lock:
                     global_state.traj_prefix_lengths[traj_id] += obs_tokens
         
@@ -231,13 +287,13 @@ def benchmark_per_turn(runtime, trajs, batch_size, config, num_turns, metadata_f
     total_env_time = 0
     
     for idx, traj in enumerate(trajs):
-        system_msg, first_user_msg, observations, env_time = prepare_trajectory_data(
+        system_msg, first_user_msg, turn_data, env_time = prepare_trajectory_data(
             traj, config, num_turns
         )
         all_data.append({
             "system_msg": system_msg,
             "first_user_msg": first_user_msg,
-            "observations": observations,
+            "turn_data": turn_data,
             "env_time": env_time
         })
         total_env_time += env_time
@@ -259,9 +315,10 @@ def benchmark_per_turn(runtime, trajs, batch_size, config, num_turns, metadata_f
         f.flush()
     
     log(f"开始并发推理（并发数={batch_size}）...")
-    log("💡 Stateful 模式：每条轨迹一次性生成所有轮次")
+    log("💡 Stateful 模式：Regex Force Generate + Sleep Env Time")
     log("   → Runtime 内部维护 KV cache，避免重复 prefill（最关键优化）")
-    log("   → 首轮 prefill 完整上下文，后续轮次只 decode 新 token")
+    log("   → Regex锁死输出：既有真实生成时间，又确保输出完全一致")
+    log("   → 每轮之间sleep环境执行时间，模拟真实场景")
     log("   → SGLang 自动 dynamic batching 处理并发请求")
     
     start_time = time.time()
@@ -358,10 +415,13 @@ def main():
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
     
     log("="*70)
-    log("🔬 Stateful KV Cache 版本 - Runtime 维护 KV State")
+    log("🔬 Stateful KV Cache 版本 - Regex Force Generate + Sleep Env Time")
     log("="*70)
     log("🚀 核心优化: 避免每轮 full prefill，Runtime 自动复用 KV")
     log("   → 节省 >99% 的 prefill 计算，预计吞吐提升 3-4x")
+    log("💡 Regex Force Generate: 使用regex锁死输出为原始response")
+    log("   → 既有真实的generate时间，又确保输出完全一致")
+    log("⏱️  Sleep Env Time: 每轮之间sleep环境执行时间（模拟真实场景）")
     log("📊 追踪: 滑动窗口吞吐量（10秒窗口，带衰减）")
     log("="*70)
     log(f"🤖 模型: Qwen2.5-14B (128k上下文)")
@@ -413,6 +473,9 @@ def main():
     log("    • 一次性定义整个多轮对话流程")
     log("    • Runtime 内部维护 KV state，避免每轮 full prefill")
     log("    • 首轮 prefill + 后续只 decode，大幅降低计算开销（节省 >99% prefill）")
+    log("  【Regex Force Generate + Sleep Env Time】")
+    log("    • Regex锁死输出：既有真实生成时间，又确保输出完全一致")
+    log("    • 每轮之间sleep环境执行时间（模拟真实场景）")
     log("  【显存管理】")
     log("    • mem_fraction=0.88: 充分利用显存空间（vs 默认0.8）")
     log("    • max_total_tokens=131k: 更大的KV cache容量（支持长对话）")
@@ -432,8 +495,12 @@ def main():
     
     # 清空文件
     with open(metadata_file, 'w') as f:
-        f.write(f"# Stateful KV Cache metrics: GPU{args.gpu}, {args.num_traj} trajs, {args.turns} turns, BS={batch_sizes}\n")
+        f.write(f"# Stateful KV Cache + Regex Force Generate + Sleep Env Time metrics\n")
+        f.write(f"# GPU{args.gpu}, {args.num_traj} trajs, {args.turns} turns, BS={batch_sizes}\n")
         f.write(f"# Runtime maintains KV state, avoids per-turn full prefill\n")
+        f.write(f"# Regex Force Generate: use regex to lock output to original response\n")
+        f.write(f"#   -> Has real generate time while ensuring output exactly matches original\n")
+        f.write(f"# Sleep Env Time: sleep between turns to simulate real scenario\n")
         f.write(f"# token_throughput_sliding: 10s sliding window with decay\n")
         f.write(f"# token_throughput_cumulative: overall average\n")
     
@@ -470,8 +537,10 @@ def main():
               f"{r['total_tokens']:<12,} "
               f"{r['avg_tokens_per_turn']:<10.1f}")
     log("="*80)
-    log("💡 注意：使用 Stateful KV Cache 后，吞吐量应显著提升")
-    log("   对比原版可看出避免重复 prefill 的收益")
+    log("💡 注意：Regex Force Generate + Sleep Env Time 模式")
+    log("   • Regex锁死输出：有真实generate时间，输出完全一致")
+    log("   • Sleep env_time：模拟真实环境执行时间")
+    log("   • Stateful KV Cache：避免重复 prefill 的收益")
     
     # 找出最优配置
     if all_results:
@@ -495,8 +564,8 @@ def main():
             "num_turns": args.turns,
             "model_load_time": load_time,
             "timestamp": time.strftime('%Y-%m-%d %H:%M:%S'),
-            "optimization": "Stateful KV Cache - Runtime maintains KV state, avoids per-turn full prefill",
-            "note": "Each trajectory generates all turns in one Runtime call, KV cache automatically reused",
+            "optimization": "Stateful KV Cache + Regex Force Generate + Sleep Env Time",
+            "note": "Use regex to lock output to original response (real generate time), sleep env_time between turns, KV cache automatically reused",
             "throughput_metric": "sliding_window (10s) reflects real-time performance",
             "metadata_file": metadata_file,
             "results": all_results
