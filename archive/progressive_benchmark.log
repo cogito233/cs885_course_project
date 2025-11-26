@@ -1,0 +1,1484 @@
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-25 09:25:39] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+======================================================================
+渐进式性能测试 - 从少到多
+======================================================================
+模型: Qwen3-14B-Base | GPU: 3 | Batch Size: 128
+时间: 2025-11-25 09:25:28
+
+[1/3] 加载配置和数据...
+✓ 50条轨迹
+
+[2/3] 加载模型...
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:00<00:03,  1.90it/s]
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:01<00:03,  1.77it/s]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:01<00:02,  1.70it/s]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:02<00:02,  1.66it/s]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:02<00:01,  1.66it/s]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:03<00:01,  1.68it/s]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:04<00:00,  1.68it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:04<00:00,  1.99it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:04<00:00,  1.80it/s]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=110.88 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=110.88 GB):   3%|▎         | 1/36 [00:00<00:06,  5.25it/s]Capturing batches (bs=248 avail_mem=110.73 GB):   3%|▎         | 1/36 [00:00<00:06,  5.25it/s]Capturing batches (bs=240 avail_mem=110.71 GB):   3%|▎         | 1/36 [00:00<00:06,  5.25it/s]Capturing batches (bs=240 avail_mem=110.71 GB):   8%|▊         | 3/36 [00:00<00:03,  9.73it/s]Capturing batches (bs=232 avail_mem=110.69 GB):   8%|▊         | 3/36 [00:00<00:03,  9.73it/s]Capturing batches (bs=224 avail_mem=110.67 GB):   8%|▊         | 3/36 [00:00<00:03,  9.73it/s]Capturing batches (bs=224 avail_mem=110.67 GB):  14%|█▍        | 5/36 [00:00<00:02, 10.91it/s]Capturing batches (bs=216 avail_mem=110.66 GB):  14%|█▍        | 5/36 [00:00<00:02, 10.91it/s]Capturing batches (bs=208 avail_mem=110.64 GB):  14%|█▍        | 5/36 [00:00<00:02, 10.91it/s]Capturing batches (bs=208 avail_mem=110.64 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.41it/s]Capturing batches (bs=200 avail_mem=110.62 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.41it/s]Capturing batches (bs=192 avail_mem=110.60 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.41it/s]Capturing batches (bs=192 avail_mem=110.60 GB):  25%|██▌       | 9/36 [00:00<00:02, 11.96it/s]Capturing batches (bs=184 avail_mem=110.59 GB):  25%|██▌       | 9/36 [00:00<00:02, 11.96it/s]Capturing batches (bs=176 avail_mem=110.58 GB):  25%|██▌       | 9/36 [00:00<00:02, 11.96it/s]Capturing batches (bs=176 avail_mem=110.58 GB):  31%|███       | 11/36 [00:00<00:01, 12.64it/s]Capturing batches (bs=168 avail_mem=110.58 GB):  31%|███       | 11/36 [00:00<00:01, 12.64it/s]Capturing batches (bs=160 avail_mem=110.56 GB):  31%|███       | 11/36 [00:01<00:01, 12.64it/s]Capturing batches (bs=160 avail_mem=110.56 GB):  36%|███▌      | 13/36 [00:01<00:01, 12.75it/s]Capturing batches (bs=152 avail_mem=110.55 GB):  36%|███▌      | 13/36 [00:01<00:01, 12.75it/s]Capturing batches (bs=144 avail_mem=110.53 GB):  36%|███▌      | 13/36 [00:01<00:01, 12.75it/s]Capturing batches (bs=144 avail_mem=110.53 GB):  42%|████▏     | 15/36 [00:01<00:01, 12.62it/s]Capturing batches (bs=136 avail_mem=110.53 GB):  42%|████▏     | 15/36 [00:01<00:01, 12.62it/s]Capturing batches (bs=128 avail_mem=110.51 GB):  42%|████▏     | 15/36 [00:01<00:01, 12.62it/s]Capturing batches (bs=128 avail_mem=110.51 GB):  47%|████▋     | 17/36 [00:01<00:01, 12.53it/s]Capturing batches (bs=120 avail_mem=110.50 GB):  47%|████▋     | 17/36 [00:01<00:01, 12.53it/s]Capturing batches (bs=112 avail_mem=110.49 GB):  47%|████▋     | 17/36 [00:01<00:01, 12.53it/s]Capturing batches (bs=112 avail_mem=110.49 GB):  53%|█████▎    | 19/36 [00:01<00:01, 12.80it/s]Capturing batches (bs=104 avail_mem=110.49 GB):  53%|█████▎    | 19/36 [00:01<00:01, 12.80it/s]Capturing batches (bs=96 avail_mem=110.48 GB):  53%|█████▎    | 19/36 [00:01<00:01, 12.80it/s] Capturing batches (bs=96 avail_mem=110.48 GB):  58%|█████▊    | 21/36 [00:01<00:01, 13.01it/s]Capturing batches (bs=88 avail_mem=110.47 GB):  58%|█████▊    | 21/36 [00:01<00:01, 13.01it/s]Capturing batches (bs=80 avail_mem=110.46 GB):  58%|█████▊    | 21/36 [00:01<00:01, 13.01it/s]Capturing batches (bs=80 avail_mem=110.46 GB):  64%|██████▍   | 23/36 [00:01<00:01, 12.92it/s]Capturing batches (bs=72 avail_mem=110.45 GB):  64%|██████▍   | 23/36 [00:01<00:01, 12.92it/s]Capturing batches (bs=64 avail_mem=110.44 GB):  64%|██████▍   | 23/36 [00:01<00:01, 12.92it/s]Capturing batches (bs=64 avail_mem=110.44 GB):  69%|██████▉   | 25/36 [00:02<00:00, 12.97it/s]Capturing batches (bs=56 avail_mem=110.44 GB):  69%|██████▉   | 25/36 [00:02<00:00, 12.97it/s]Capturing batches (bs=48 avail_mem=110.43 GB):  69%|██████▉   | 25/36 [00:02<00:00, 12.97it/s]Capturing batches (bs=48 avail_mem=110.43 GB):  75%|███████▌  | 27/36 [00:02<00:00, 13.04it/s]Capturing batches (bs=40 avail_mem=110.42 GB):  75%|███████▌  | 27/36 [00:02<00:00, 13.04it/s]Capturing batches (bs=32 avail_mem=110.41 GB):  75%|███████▌  | 27/36 [00:02<00:00, 13.04it/s]Capturing batches (bs=32 avail_mem=110.41 GB):  81%|████████  | 29/36 [00:02<00:00, 13.23it/s]Capturing batches (bs=24 avail_mem=110.40 GB):  81%|████████  | 29/36 [00:02<00:00, 13.23it/s]Capturing batches (bs=16 avail_mem=110.40 GB):  81%|████████  | 29/36 [00:02<00:00, 13.23it/s]Capturing batches (bs=16 avail_mem=110.40 GB):  86%|████████▌ | 31/36 [00:02<00:00, 12.35it/s]Capturing batches (bs=12 avail_mem=110.39 GB):  86%|████████▌ | 31/36 [00:02<00:00, 12.35it/s]Capturing batches (bs=8 avail_mem=110.38 GB):  86%|████████▌ | 31/36 [00:02<00:00, 12.35it/s] Capturing batches (bs=8 avail_mem=110.38 GB):  92%|█████████▏| 33/36 [00:02<00:00, 12.92it/s]Capturing batches (bs=4 avail_mem=110.37 GB):  92%|█████████▏| 33/36 [00:02<00:00, 12.92it/s]Capturing batches (bs=2 avail_mem=110.37 GB):  92%|█████████▏| 33/36 [00:02<00:00, 12.92it/s]Capturing batches (bs=2 avail_mem=110.37 GB):  97%|█████████▋| 35/36 [00:02<00:00, 13.82it/s]Capturing batches (bs=1 avail_mem=110.36 GB):  97%|█████████▋| 35/36 [00:02<00:00, 13.82it/s]Capturing batches (bs=1 avail_mem=110.36 GB): 100%|██████████| 36/36 [00:02<00:00, 12.67it/s]
+3, 30218 MiB
+[2025-11-25 09:26:13] Input length (1304 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='7134749232fc4c939ba694967d424a13'
+[2025-11-25 09:26:13] [http_server] Error: Input length (1304 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1304 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:14] Input length (1410 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a733a9a29a224679b949f7eefe70bd2e'
+[2025-11-25 09:26:14] [http_server] Error: Input length (1410 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1410 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:15] Input length (1397 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dfc1c2c7cb2c4d76a756136bbf88d8d1'
+[2025-11-25 09:26:15] [http_server] Error: Input length (1397 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1397 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:18] Input length (1346 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a10c9fab59a245d693e67ddfe22a5be9'
+[2025-11-25 09:26:18] [http_server] Error: Input length (1346 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1346 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:20] Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ffc404c364f442d9becb27dc33cdc506'
+[2025-11-25 09:26:20] [http_server] Error: Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:23] Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='fa43c4278d304bcfaf6950548c2bf0d2'
+[2025-11-25 09:26:23] [http_server] Error: Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:25] Input length (1286 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2885950dfe2c4ce988f1ab009e7e2003'
+[2025-11-25 09:26:25] [http_server] Error: Input length (1286 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1286 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:27] Input length (1397 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='f5992ff744ec4ac9a6eb2ae8714f9e7e'
+[2025-11-25 09:26:27] [http_server] Error: Input length (1397 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:26:30] Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8d7b305ea76c4c6ba4a0a552923b934b'
+[2025-11-25 09:26:30] [http_server] Error: Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:32] Input length (1288 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='bde9592f925e4ab99edce3b67f9e6f61'
+[2025-11-25 09:26:32] [http_server] Error: Input length (1288 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1288 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:34] Input length (1347 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9db0ce25638949c08e82a79219e0a2c5'
+[2025-11-25 09:26:34] [http_server] Error: Input length (1347 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1347 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:37] Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='6723bd8ce3524556a8e017a4c6acefdb'
+[2025-11-25 09:26:37] [http_server] Error: Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:39] Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='5b14eea636e3448188cc136029f63a2b'
+[2025-11-25 09:26:39] [http_server] Error: Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:41] Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='56fefebb9d7a4f368e1a261f1da0fc42'
+[2025-11-25 09:26:41] [http_server] Error: Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:43] Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4dc333c425ec4ee084e60810a56a765f'
+[2025-11-25 09:26:43] [http_server] Error: Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:45] Input length (1208 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a7a9e7b19b0d4f20a38411eeefa2c5b3'
+[2025-11-25 09:26:45] [http_server] Error: Input length (1208 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1208 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:47] Input length (1283 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='37c582583509470ca6eb4255f9490370'
+[2025-11-25 09:26:47] [http_server] Error: Input length (1283 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1283 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:50] Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='1f445b6785b242309b18e24dac5dbc6e'
+[2025-11-25 09:26:50] [http_server] Error: Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:52] Input length (1300 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e9f6928740874ebfa2223dc11ce017b0'
+[2025-11-25 09:26:52] [http_server] Error: Input length (1300 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1300 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:54] Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='192e4711d7804c3aa5e36a9ee1e582d1'
+[2025-11-25 09:26:54] [http_server] Error: Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:57] Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='b40236625f5949629ce1cb122932f8cd'
+[2025-11-25 09:26:57] [http_server] Error: Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:26:59] Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='d9e531c3a1774a97b64f2316778b6dde'
+[2025-11-25 09:26:59] [http_server] Error: Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:01] Input length (1273 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3a904074695747429c9682922edc3c0e'
+[2025-11-25 09:27:01] [http_server] Error: Input length (1273 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1273 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:03] Input length (1409 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='39bfa3921adb46988d1cd6fe29eb3759'
+[2025-11-25 09:27:03] [http_server] Error: Input length (1409 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1409 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:05] Input length (1315 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='273ed8a607e8438fb0641a4dc2263d78'
+[2025-11-25 09:27:05] [http_server] Error: Input length (1315 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1315 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:08] Input length (1262 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='001f9d93efa048ef9d1cf2d8d9047bb2'
+[2025-11-25 09:27:08] [http_server] Error: Input length (1262 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1262 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:10] Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9ebf7858a7824ede9a9e30c1d1f2e9d8'
+[2025-11-25 09:27:10] [http_server] Error: Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:12] Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='64713f64ba704486bc4e7156dee00f04'
+[2025-11-25 09:27:12] [http_server] Error: Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:15] Input length (1241 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='072779a223234b3d9fc179aec637258f'
+[2025-11-25 09:27:15] [http_server] Error: Input length (1241 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1241 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:17] Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='f89a1446699f4e51b84cf07114b3b4b2'
+[2025-11-25 09:27:17] [http_server] Error: Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:19] Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8b93d4f0038c4665be977b6a48603649'
+[2025-11-25 09:27:19] [http_server] Error: Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:20] Input length (1327 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a6039858d1fa47f28569d96745c39d55'
+[2025-11-25 09:27:20] [http_server] Error: Input length (1327 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1327 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:22] Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dc155c22b1f94bc9a9029d1a438c0a89'
+[2025-11-25 09:27:22] [http_server] Error: Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:24] Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='90ab4e343097477e959eb8cfba2c47b6'
+[2025-11-25 09:27:24] [http_server] Error: Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:27:27] Input length (1312 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a933aebe286e4327a85a1db634e41c09'
+[2025-11-25 09:27:27] [http_server] Error: Input length (1312 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1312 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:29] Input length (1410 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e2ad572eae824fd197506478eaba3784'
+[2025-11-25 09:27:29] [http_server] Error: Input length (1410 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:27:31] Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='b82cb639b2af41f0ab10662070e6f87d'
+[2025-11-25 09:27:31] [http_server] Error: Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:33] Input length (1406 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='5ae0d3e7db484acba55b8dd9b4dea1c0'
+[2025-11-25 09:27:33] [http_server] Error: Input length (1406 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1406 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:36] Input length (1267 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9508430bc41b4693ae1d52ded6a38db7'
+[2025-11-25 09:27:36] [http_server] Error: Input length (1267 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1267 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:38] Input length (1296 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='5568af4b1ede4cb990b3890a031a1c80'
+[2025-11-25 09:27:38] [http_server] Error: Input length (1296 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1296 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:40] Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='07e3b361afb64bd8beb997b85f671d0c'
+[2025-11-25 09:27:40] [http_server] Error: Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:27:43] Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='445a2e4e39754f83b8fbad4bde7ecbaa'
+[2025-11-25 09:27:43] [http_server] Error: Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:27:45] Input length (1245 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9e9c6fd72a444d5b8a315987c4abb5fb'
+[2025-11-25 09:27:45] [http_server] Error: Input length (1245 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1245 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:48] Input length (1289 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ceae31de6b0b45f198214df6ce3426b7'
+[2025-11-25 09:27:48] [http_server] Error: Input length (1289 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1289 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:50] Input length (1275 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ae7dc8170eb24e84bfe7b423ed136e17'
+[2025-11-25 09:27:50] [http_server] Error: Input length (1275 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1275 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:52] Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='c92bc4de859d40ee862c271f1b6e51ad'
+[2025-11-25 09:27:52] [http_server] Error: Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:55] Input length (1292 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='02f6b344a8bc45688fe2d82b9ee0937b'
+[2025-11-25 09:27:55] [http_server] Error: Input length (1292 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1292 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:57] Input length (1242 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='bec5bf9627c04e8194112b4d2d6ce9be'
+[2025-11-25 09:27:57] [http_server] Error: Input length (1242 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1242 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:27:59] Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='6a5a544fe594456fa4c176d692836434'
+[2025-11-25 09:27:59] [http_server] Error: Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:02] Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2a8d2f53ae874bd78cf8f366dab5bd64'
+[2025-11-25 09:28:02] [http_server] Error: Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:05] Input length (1304 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='713b2b389f80410ab2b844ca5914af54'
+[2025-11-25 09:28:05] [http_server] Error: Input length (1304 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:07] Input length (1371 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='26782b94f90f4405a2db22f1d20503ad'
+[2025-11-25 09:28:07] [http_server] Error: Input length (1371 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1371 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:09] Input length (1398 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='0ddc3374fed547ceb3c2820b29195976'
+[2025-11-25 09:28:09] [http_server] Error: Input length (1398 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1398 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:11] Input length (1347 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='cfd254309ed249b291af4045f0ff1b93'
+[2025-11-25 09:28:11] [http_server] Error: Input length (1347 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:14] Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='65bcc701597b4c30ac02d23c868a5e88'
+[2025-11-25 09:28:14] [http_server] Error: Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:16] Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='40496a42698449c0b078eb4e081a8d56'
+[2025-11-25 09:28:16] [http_server] Error: Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:18] Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e997dd461f4143169ab16d120fd9f8df'
+[2025-11-25 09:28:18] [http_server] Error: Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:19] Input length (1434 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='1e92288b5dda49b18ba64f2253aecdf5'
+[2025-11-25 09:28:19] [http_server] Error: Input length (1434 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1434 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:21] Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dbda9246036944ab8a5ff162659a327d'
+[2025-11-25 09:28:21] [http_server] Error: Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:23] Input length (1288 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='7706b8eb4bc54c82aebb2e1ac7ba7588'
+[2025-11-25 09:28:23] [http_server] Error: Input length (1288 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:26] Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='f09e647383514d92b47e9e9188b2175d'
+[2025-11-25 09:28:26] [http_server] Error: Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:28] Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4a53d86e1127451e8856071a44aaf3ff'
+[2025-11-25 09:28:28] [http_server] Error: Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:30] Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='910c28bad27d4745ba652578f5503782'
+[2025-11-25 09:28:30] [http_server] Error: Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:33] Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9665f9ba80e74e4fa326bedeb3c3b9b0'
+[2025-11-25 09:28:33] [http_server] Error: Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:35] Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='7010b28a56384e83ab89e81d21f1a6e8'
+[2025-11-25 09:28:35] [http_server] Error: Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:37] Input length (1305 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4c0e35b31a4b472a95ca29ea37c2e5db'
+[2025-11-25 09:28:37] [http_server] Error: Input length (1305 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1305 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:39] Input length (1283 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='78da9335a11946399d6c8e135eb9dc2c'
+[2025-11-25 09:28:39] [http_server] Error: Input length (1283 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:42] Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='cde9328747cc49d6842f3c4505bf07c7'
+[2025-11-25 09:28:42] [http_server] Error: Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:44] Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='c17cbff74b5549948e38b8398a23b8a5'
+[2025-11-25 09:28:44] [http_server] Error: Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:46] Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='93c8cc9395814addbcb5734832aa1fe1'
+[2025-11-25 09:28:46] [http_server] Error: Input length (1299 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:49] Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='77673283da8a4ca3800ce1a1cb2e9228'
+[2025-11-25 09:28:49] [http_server] Error: Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:51] Input length (1257 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3f037bb145754fae9f597b486719873b'
+[2025-11-25 09:28:51] [http_server] Error: Input length (1257 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1257 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:53] Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='56d6df56c0e548c0b439dcc8ca5dbbc3'
+[2025-11-25 09:28:53] [http_server] Error: Input length (1272 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:28:56] Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='017c266ddb5d4d3ab8903535ecd3500b'
+[2025-11-25 09:28:56] [http_server] Error: Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:28:58] Input length (1315 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='bbb7feb8d3a4498d9a368590206f892b'
+[2025-11-25 09:28:58] [http_server] Error: Input length (1315 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:01] Input length (1261 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='0617e2c2c165473a8f9a7185dd01d335'
+[2025-11-25 09:29:01] [http_server] Error: Input length (1261 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1261 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:03] Input length (1349 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='0fdf59ddfe51486a93a6109c78ae1db1'
+[2025-11-25 09:29:03] [http_server] Error: Input length (1349 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1349 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:04] Input length (1258 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='adf773fd928245a785ef570f59468218'
+[2025-11-25 09:29:04] [http_server] Error: Input length (1258 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1258 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:06] Input length (1173 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2fa366ae0d6545d7ab57afa1ccfee368'
+[2025-11-25 09:29:06] [http_server] Error: Input length (1173 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1173 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:08] Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2f1610373fee41418fcdfc1880463fc9'
+[2025-11-25 09:29:08] [http_server] Error: Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:10] Input length (1265 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='f4f960acce594c18bcb0f056f0b468a3'
+[2025-11-25 09:29:10] [http_server] Error: Input length (1265 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1265 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:12] Input length (1307 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='6f296218b0a94d219eebdaec0d17924c'
+[2025-11-25 09:29:12] [http_server] Error: Input length (1307 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1307 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:15] Input length (1278 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='67366bc84f5a4ebda4ddd980397bd61d'
+[2025-11-25 09:29:15] [http_server] Error: Input length (1278 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1278 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:17] Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e1a35b2b8a10451dbb8597d505a76bab'
+[2025-11-25 09:29:17] [http_server] Error: Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:19] Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8c80a5881ea4468f8f88a1584807828f'
+[2025-11-25 09:29:19] [http_server] Error: Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:21] Input length (1313 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='d98079fbd7ed46b79a00b970203256a3'
+[2025-11-25 09:29:21] [http_server] Error: Input length (1313 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1313 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:23] Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='75102f50434840239bde53987d857f5e'
+[2025-11-25 09:29:23] [http_server] Error: Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:25] Input length (1406 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='6ff29bcf621144119865980b6db87cca'
+[2025-11-25 09:29:25] [http_server] Error: Input length (1406 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:27] Input length (1266 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2d3a1ca6a8d74f75bd1fec8c632db149'
+[2025-11-25 09:29:27] [http_server] Error: Input length (1266 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1266 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:30] Input length (1296 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='d2c214c4e13c45e7a813a755fc751e18'
+[2025-11-25 09:29:30] [http_server] Error: Input length (1296 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:32] Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='969462aaad644839bebb174463d03c48'
+[2025-11-25 09:29:32] [http_server] Error: Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:35] Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8f26aef66e4947d696628d22d8dc5274'
+[2025-11-25 09:29:35] [http_server] Error: Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:37] Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e7301ff081774cb5b56cb0f69cb98071'
+[2025-11-25 09:29:37] [http_server] Error: Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:39] Input length (1290 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='099bd00d98d542298bd3b090143a2fe3'
+[2025-11-25 09:29:39] [http_server] Error: Input length (1290 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1290 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:42] Input length (1275 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='75caa1aea74a4b668658970e4df3a8c1'
+[2025-11-25 09:29:42] [http_server] Error: Input length (1275 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:44] Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='23abe65e61e843148921ea97a9d8c396'
+[2025-11-25 09:29:44] [http_server] Error: Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:45] Input length (1407 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2aba893749054332b622a80b38701b37'
+[2025-11-25 09:29:45] [http_server] Error: Input length (1407 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1407 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:29:48] Input length (1242 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9db03ecfee094f138b0aeb6f13278f78'
+[2025-11-25 09:29:48] [http_server] Error: Input length (1242 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:50] Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='88f912bce9604dc0832058bcd4533717'
+[2025-11-25 09:29:50] [http_server] Error: Input length (1254 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:52] Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='d6a19bee61534dbdb012c2e2a69f8718'
+[2025-11-25 09:29:52] [http_server] Error: Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:56] Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='16a7c80e90ef4e2aa4f4d86fd4178bfc'
+[2025-11-25 09:29:56] [http_server] Error: Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:29:58] Input length (1370 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3b0c129a29554917aaa0c745447c098a'
+[2025-11-25 09:29:58] [http_server] Error: Input length (1370 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1370 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:00] Input length (1260 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='468e810e11974dcd9358fbbfe10de2e6'
+[2025-11-25 09:30:00] [http_server] Error: Input length (1260 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1260 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:03] Input length (1346 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='13f1801925f4483dbff1f893b71a8e72'
+[2025-11-25 09:30:03] [http_server] Error: Input length (1346 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:05] Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='22f84452d1004ce9b5968c13fb4bbf0e'
+[2025-11-25 09:30:05] [http_server] Error: Input length (1303 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:07] Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='0182f5f4908a4491aa44aa6ffeaf8ce9'
+[2025-11-25 09:30:07] [http_server] Error: Input length (1239 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:10] Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='b5f0c1e098c24d7f9a5d880d2eeb462e'
+[2025-11-25 09:30:10] [http_server] Error: Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:12] Input length (1396 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='9abe00630174465fb7b8f8e7ba454125'
+[2025-11-25 09:30:12] [http_server] Error: Input length (1396 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1396 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:14] Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='b3e59fc596cf40c6803190d81a889b65'
+[2025-11-25 09:30:14] [http_server] Error: Input length (1311 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:17] Input length (1287 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='09cc4ece1afb40a8bcd6bb5e45512ff8'
+[2025-11-25 09:30:17] [http_server] Error: Input length (1287 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1287 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:19] Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='bcf0871af6b2421ca595cd4444168c90'
+[2025-11-25 09:30:19] [http_server] Error: Input length (1348 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:21] Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='1351fc63d3fc4dfb9460e78745ec69ea'
+[2025-11-25 09:30:21] [http_server] Error: Input length (1308 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:24] Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3eee92bf26854d579c5ca26ffa19c118'
+[2025-11-25 09:30:24] [http_server] Error: Input length (1328 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:26] Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='2865fb11585c406a8e1a6dccf1f67272'
+[2025-11-25 09:30:26] [http_server] Error: Input length (1301 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:28] Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='a340f23c3a414a6c80e6e281ad27b646'
+[2025-11-25 09:30:28] [http_server] Error: Input length (1413 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:30] Input length (1305 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dadce950c92842dda4602a9efa26de8b'
+[2025-11-25 09:30:30] [http_server] Error: Input length (1305 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:33] Input length (1282 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='0e0ca7a0c6cc4cd9b421b0792ca1bdd1'
+[2025-11-25 09:30:33] [http_server] Error: Input length (1282 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1282 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:35] Input length (1271 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ed7d1744d7744b12834dba41cd3f6c50'
+[2025-11-25 09:30:35] [http_server] Error: Input length (1271 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1271 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:37] Input length (1300 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dba0c335823b4b78b0c6506bdb2d4028'
+[2025-11-25 09:30:37] [http_server] Error: Input length (1300 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:40] Input length (1298 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4e55832a724a44b6ae726f9d7f23ad5f'
+[2025-11-25 09:30:40] [http_server] Error: Input length (1298 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1298 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:42] Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ca1b70ea5a744105a020a4b4578b3d28'
+[2025-11-25 09:30:42] [http_server] Error: Input length (1341 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:44] Input length (1257 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8aa7a98f0f2349a68b7362a5a83c2b65'
+[2025-11-25 09:30:44] [http_server] Error: Input length (1257 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:47] Input length (1273 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='7c419411f36c4ef28b3d089587722567'
+[2025-11-25 09:30:47] [http_server] Error: Input length (1273 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:49] Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='92dffb851bb14fe6bf5eefd62fa0e841'
+[2025-11-25 09:30:49] [http_server] Error: Input length (1246 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:52] Input length (1316 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='cab58b21908a437f97f805b9178ab6a2'
+[2025-11-25 09:30:52] [http_server] Error: Input length (1316 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1316 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:30:54] Input length (1261 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='5e65378883b948e38c3d751d70198f07'
+[2025-11-25 09:30:54] [http_server] Error: Input length (1261 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:56] Input length (1349 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4430308bcac949f18b2f24448231050a'
+[2025-11-25 09:30:56] [http_server] Error: Input length (1349 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:30:59] Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='1de6a9e9b0fd4e0496cf2fe97ae0108c'
+[2025-11-25 09:30:59] [http_server] Error: Input length (1285 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:01] Input length (1241 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='6e8de9bbde9246248956f1b6de4674a5'
+[2025-11-25 09:31:01] [http_server] Error: Input length (1241 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:03] Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='dda3cf8aa51a4d50ba25a70e06056a26'
+[2025-11-25 09:31:03] [http_server] Error: Input length (1295 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:06] Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3054274a49e241a48c9b9399f068a737'
+[2025-11-25 09:31:06] [http_server] Error: Input length (1268 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:08] Input length (1307 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='8847ec5e15144a5e843327241e71ee17'
+[2025-11-25 09:31:08] [http_server] Error: Input length (1307 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:10] Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4dc73d4b92a5469d92212be0a6b3b678'
+[2025-11-25 09:31:10] [http_server] Error: Input length (1279 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:13] Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='3388bfaf857d4136a424b01f957762af'
+[2025-11-25 09:31:13] [http_server] Error: Input length (1256 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:15] Input length (1312 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ff9a18d8d4364816a217b4bc6ba1b728'
+[2025-11-25 09:31:15] [http_server] Error: Input length (1312 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:17] Input length (1411 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='ba30ad74660b45d9875aa87fd6786207'
+[2025-11-25 09:31:17] [http_server] Error: Input length (1411 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py:410: UserWarning: Error in stream_executor: Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 408, in _thread_worker_func
+    self._execute(expr)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 451, in _execute
+    self._execute(x)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 446, in _execute
+    self._execute_gen(other)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/interpreter.py", line 574, in _execute_gen
+    comp, meta_info = self.backend.generate(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 191, in generate
+    self._assert_success(res)
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/sglang/lang/backend/runtime_endpoint.py", line 347, in _assert_success
+    raise RuntimeError(content)
+RuntimeError: {'error': {'message': 'Input length (1411 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.'}}
+
+  warnings.warn(f"Error in stream_executor: {get_exception_traceback()}")
+[2025-11-25 09:31:20] Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='e68276ae106e4522bef8113eff4d5dca'
+[2025-11-25 09:31:20] [http_server] Error: Input length (1244 tokens) exceeds the maximum allowed length (1167 tokens). Use a shorter input or enable --allow-auto-truncate.
+[2025-11-25 09:31:21] [http_server] Error: Request is disconnected from the client side (type 3). Abort request obj.rid='54d1508e97e24e3d9683e3eaf719ff7e'

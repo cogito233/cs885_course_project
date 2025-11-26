@@ -1,0 +1,81 @@
+{
+  "model_path": "/data/minimax-dialogue/users/ruobai/cogito/base_model/R2EGym-7B-Agent",
+  "num_trajectories": 500,
+  "model_load_time": 46.33010673522949,
+  "test_timestamp": "2025-11-25 08:24:51",
+  "results": [
+    {
+      "batch_size": 1,
+      "total_trajectories": 500,
+      "processed": 500,
+      "failed": 0,
+      "inference_total_time": 0.5495288372039795,
+      "throughput": 909.8703582946005,
+      "avg_inference_time_per_trajectory": 0.001099057674407959,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "avg_env_time_per_trajectory": 2.149206958293915,
+      "total_env_time": 1074.6034791469574,
+      "total_time_for_trajectories": 0.5495288372039795
+    },
+    {
+      "batch_size": 2,
+      "total_trajectories": 500,
+      "processed": 500,
+      "failed": 0,
+      "inference_total_time": 0.31363654136657715,
+      "throughput": 1594.201995154646,
+      "avg_inference_time_per_trajectory": 0.0006272730827331543,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "avg_env_time_per_trajectory": 2.149206958293915,
+      "total_env_time": 1074.6034791469574,
+      "total_time_for_trajectories": 0.31363654136657715
+    },
+    {
+      "batch_size": 4,
+      "total_trajectories": 500,
+      "processed": 500,
+      "failed": 0,
+      "inference_total_time": 0.3274991512298584,
+      "throughput": 1526.721514001941,
+      "avg_inference_time_per_trajectory": 0.0006549983024597168,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "avg_env_time_per_trajectory": 2.149206958293915,
+      "total_env_time": 1074.6034791469574,
+      "total_time_for_trajectories": 0.3274991512298584
+    },
+    {
+      "batch_size": 8,
+      "total_trajectories": 500,
+      "processed": 500,
+      "failed": 0,
+      "inference_total_time": 0.3326711654663086,
+      "throughput": 1502.9856864785527,
+      "avg_inference_time_per_trajectory": 0.0006653423309326172,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "avg_env_time_per_trajectory": 2.149206958293915,
+      "total_env_time": 1074.6034791469574,
+      "total_time_for_trajectories": 0.3326711654663086
+    },
+    {
+      "batch_size": 16,
+      "total_trajectories": 500,
+      "processed": 500,
+      "failed": 0,
+      "inference_total_time": 0.5606703758239746,
+      "throughput": 891.7895818290525,
+      "avg_inference_time_per_trajectory": 0.0011213407516479491,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "avg_env_time_per_trajectory": 2.149206958293915,
+      "total_env_time": 1074.6034791469574,
+      "total_time_for_trajectories": 0.5606703758239746
+    }
+  ],
+  "best_batch_size": 2,
+  "best_throughput": 1594.201995154646,
+  "best_total_time": 0.31363654136657715
+}

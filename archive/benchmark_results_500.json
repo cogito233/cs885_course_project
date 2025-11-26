@@ -1,0 +1,75 @@
+{
+  "model_path": "/data/minimax-dialogue/users/ruobai/cogito/base_model/R2EGym-7B-Agent",
+  "num_trajectories": 500,
+  "model_load_time": 48.858561277389526,
+  "test_timestamp": "2025-11-25 08:22:01",
+  "results": [
+    {
+      "batch_size": 1,
+      "total_trajectories": 500,
+      "processed": 500,
+      "total_time": 0.6587395668029785,
+      "throughput": 759.0253040767237,
+      "avg_time_per_trajectory": 0.0013174791336059571,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "total_gen_time": 0.656956672668457,
+      "avg_gen_time_per_trajectory": 0.0013139133453369141,
+      "avg_env_time_original": 1.0780665259361266
+    },
+    {
+      "batch_size": 2,
+      "total_trajectories": 500,
+      "processed": 500,
+      "total_time": 0.432772159576416,
+      "throughput": 1155.342341081701,
+      "avg_time_per_trajectory": 0.0008655443191528321,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "total_gen_time": 0.4313671588897705,
+      "avg_gen_time_per_trajectory": 0.0008627343177795411,
+      "avg_env_time_original": 1.0780665259361266
+    },
+    {
+      "batch_size": 4,
+      "total_trajectories": 500,
+      "processed": 500,
+      "total_time": 0.42366456985473633,
+      "throughput": 1180.1789329974822,
+      "avg_time_per_trajectory": 0.0008473291397094727,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "total_gen_time": 0.42297935485839844,
+      "avg_gen_time_per_trajectory": 0.0008459587097167969,
+      "avg_env_time_original": 1.0780665259361266
+    },
+    {
+      "batch_size": 8,
+      "total_trajectories": 500,
+      "processed": 500,
+      "total_time": 0.44443511962890625,
+      "throughput": 1125.0236039345614,
+      "avg_time_per_trajectory": 0.0008888702392578125,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "total_gen_time": 0.4439380168914795,
+      "avg_gen_time_per_trajectory": 0.000887876033782959,
+      "avg_env_time_original": 1.0780665259361266
+    },
+    {
+      "batch_size": 16,
+      "total_trajectories": 500,
+      "processed": 500,
+      "total_time": 0.7312674522399902,
+      "throughput": 683.7443653049501,
+      "avg_time_per_trajectory": 0.0014625349044799804,
+      "total_tokens": 0,
+      "avg_tokens_per_trajectory": 0.0,
+      "total_gen_time": 0.7308487892150879,
+      "avg_gen_time_per_trajectory": 0.0014616975784301758,
+      "avg_env_time_original": 1.0780665259361266
+    }
+  ],
+  "best_batch_size": 4,
+  "best_throughput": 1180.1789329974822
+}

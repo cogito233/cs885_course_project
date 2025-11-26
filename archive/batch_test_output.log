@@ -1,0 +1,125 @@
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-25 08:19:18] INFO model_config.py:885: Downcasting torch.float32 to torch.float16.
+[2025-11-25 08:19:18] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+======================================================================
+批量处理性能测试 - 小规模验证
+======================================================================
+
+[1/5] 加载配置文件...
+✓ 配置加载完成
+  System prompt 长度: 5360 字符
+
+[2/5] 加载轨迹数据...
+✓ 加载了 10 条轨迹
+
+[3/5] 正在加载模型...
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/7 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  14% Completed | 1/7 [00:01<00:09,  1.57s/it]
+Loading safetensors checkpoint shards:  29% Completed | 2/7 [00:03<00:08,  1.69s/it]
+Loading safetensors checkpoint shards:  43% Completed | 3/7 [00:05<00:06,  1.71s/it]
+Loading safetensors checkpoint shards:  57% Completed | 4/7 [00:06<00:05,  1.71s/it]
+Loading safetensors checkpoint shards:  71% Completed | 5/7 [00:08<00:03,  1.72s/it]
+Loading safetensors checkpoint shards:  86% Completed | 6/7 [00:09<00:01,  1.60s/it]
+Loading safetensors checkpoint shards: 100% Completed | 7/7 [00:10<00:00,  1.37s/it]
+Loading safetensors checkpoint shards: 100% Completed | 7/7 [00:10<00:00,  1.54s/it]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=26.91 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=26.91 GB):   3%|▎         | 1/36 [00:00<00:05,  6.12it/s]Capturing batches (bs=248 avail_mem=26.75 GB):   3%|▎         | 1/36 [00:00<00:05,  6.12it/s]Capturing batches (bs=240 avail_mem=26.74 GB):   3%|▎         | 1/36 [00:00<00:05,  6.12it/s]Capturing batches (bs=232 avail_mem=26.73 GB):   3%|▎         | 1/36 [00:00<00:05,  6.12it/s]Capturing batches (bs=232 avail_mem=26.73 GB):  11%|█         | 4/36 [00:00<00:02, 15.16it/s]Capturing batches (bs=224 avail_mem=26.72 GB):  11%|█         | 4/36 [00:00<00:02, 15.16it/s]Capturing batches (bs=216 avail_mem=26.72 GB):  11%|█         | 4/36 [00:00<00:02, 15.16it/s]Capturing batches (bs=208 avail_mem=26.71 GB):  11%|█         | 4/36 [00:00<00:02, 15.16it/s]Capturing batches (bs=208 avail_mem=26.71 GB):  19%|█▉        | 7/36 [00:00<00:01, 18.09it/s]Capturing batches (bs=200 avail_mem=26.70 GB):  19%|█▉        | 7/36 [00:00<00:01, 18.09it/s]Capturing batches (bs=192 avail_mem=26.69 GB):  19%|█▉        | 7/36 [00:00<00:01, 18.09it/s]Capturing batches (bs=184 avail_mem=26.69 GB):  19%|█▉        | 7/36 [00:00<00:01, 18.09it/s]Capturing batches (bs=184 avail_mem=26.69 GB):  28%|██▊       | 10/36 [00:00<00:01, 19.70it/s]Capturing batches (bs=176 avail_mem=26.68 GB):  28%|██▊       | 10/36 [00:00<00:01, 19.70it/s]Capturing batches (bs=168 avail_mem=26.68 GB):  28%|██▊       | 10/36 [00:00<00:01, 19.70it/s]Capturing batches (bs=160 avail_mem=26.67 GB):  28%|██▊       | 10/36 [00:00<00:01, 19.70it/s]Capturing batches (bs=160 avail_mem=26.67 GB):  36%|███▌      | 13/36 [00:00<00:01, 20.31it/s]Capturing batches (bs=152 avail_mem=26.66 GB):  36%|███▌      | 13/36 [00:00<00:01, 20.31it/s]Capturing batches (bs=144 avail_mem=26.66 GB):  36%|███▌      | 13/36 [00:00<00:01, 20.31it/s]Capturing batches (bs=136 avail_mem=26.65 GB):  36%|███▌      | 13/36 [00:00<00:01, 20.31it/s]Capturing batches (bs=136 avail_mem=26.65 GB):  44%|████▍     | 16/36 [00:00<00:00, 20.55it/s]Capturing batches (bs=128 avail_mem=26.64 GB):  44%|████▍     | 16/36 [00:00<00:00, 20.55it/s]Capturing batches (bs=120 avail_mem=26.63 GB):  44%|████▍     | 16/36 [00:00<00:00, 20.55it/s]Capturing batches (bs=112 avail_mem=26.63 GB):  44%|████▍     | 16/36 [00:00<00:00, 20.55it/s]Capturing batches (bs=112 avail_mem=26.63 GB):  53%|█████▎    | 19/36 [00:00<00:00, 21.17it/s]Capturing batches (bs=104 avail_mem=26.62 GB):  53%|█████▎    | 19/36 [00:00<00:00, 21.17it/s]Capturing batches (bs=96 avail_mem=26.62 GB):  53%|█████▎    | 19/36 [00:01<00:00, 21.17it/s] Capturing batches (bs=88 avail_mem=26.61 GB):  53%|█████▎    | 19/36 [00:01<00:00, 21.17it/s]Capturing batches (bs=88 avail_mem=26.61 GB):  61%|██████    | 22/36 [00:01<00:00, 20.99it/s]Capturing batches (bs=80 avail_mem=26.61 GB):  61%|██████    | 22/36 [00:01<00:00, 20.99it/s]Capturing batches (bs=72 avail_mem=26.60 GB):  61%|██████    | 22/36 [00:01<00:00, 20.99it/s]Capturing batches (bs=64 avail_mem=26.60 GB):  61%|██████    | 22/36 [00:01<00:00, 20.99it/s]Capturing batches (bs=64 avail_mem=26.60 GB):  69%|██████▉   | 25/36 [00:01<00:00, 21.01it/s]Capturing batches (bs=56 avail_mem=26.59 GB):  69%|██████▉   | 25/36 [00:01<00:00, 21.01it/s]Capturing batches (bs=48 avail_mem=26.59 GB):  69%|██████▉   | 25/36 [00:01<00:00, 21.01it/s]Capturing batches (bs=40 avail_mem=26.58 GB):  69%|██████▉   | 25/36 [00:01<00:00, 21.01it/s]Capturing batches (bs=40 avail_mem=26.58 GB):  78%|███████▊  | 28/36 [00:01<00:00, 21.57it/s]Capturing batches (bs=32 avail_mem=26.58 GB):  78%|███████▊  | 28/36 [00:01<00:00, 21.57it/s]Capturing batches (bs=24 avail_mem=26.57 GB):  78%|███████▊  | 28/36 [00:01<00:00, 21.57it/s]Capturing batches (bs=16 avail_mem=26.57 GB):  78%|███████▊  | 28/36 [00:01<00:00, 21.57it/s]Capturing batches (bs=16 avail_mem=26.57 GB):  86%|████████▌ | 31/36 [00:01<00:00, 20.26it/s]Capturing batches (bs=12 avail_mem=26.56 GB):  86%|████████▌ | 31/36 [00:01<00:00, 20.26it/s]Capturing batches (bs=8 avail_mem=26.56 GB):  86%|████████▌ | 31/36 [00:01<00:00, 20.26it/s] Capturing batches (bs=4 avail_mem=26.55 GB):  86%|████████▌ | 31/36 [00:01<00:00, 20.26it/s]Capturing batches (bs=4 avail_mem=26.55 GB):  94%|█████████▍| 34/36 [00:01<00:00, 21.76it/s]Capturing batches (bs=2 avail_mem=26.55 GB):  94%|█████████▍| 34/36 [00:01<00:00, 21.76it/s]Capturing batches (bs=1 avail_mem=26.54 GB):  94%|█████████▍| 34/36 [00:01<00:00, 21.76it/s]Capturing batches (bs=1 avail_mem=26.54 GB): 100%|██████████| 36/36 [00:01<00:00, 20.59it/s]
+✓ 模型加载完成！耗时: 47.92秒
+
+[4/5] 开始性能测试...
+
+======================================================================
+测试 Batch Size: 1
+======================================================================
+准备了 10 条轨迹
+平均每条轨迹有 8.0 条消息
+  批次 1: 处理了 1 条, 耗时: 0.00秒, 速度: 2192.53 条/秒
+  批次 2: 处理了 1 条, 耗时: 0.00秒, 速度: 1907.37 条/秒
+  批次 3: 处理了 1 条, 耗时: 0.00秒, 速度: 2300.77 条/秒
+  批次 4: 处理了 1 条, 耗时: 0.00秒, 速度: 2593.88 条/秒
+  批次 5: 处理了 1 条, 耗时: 0.00秒, 速度: 2697.30 条/秒
+  批次 6: 处理了 1 条, 耗时: 0.00秒, 速度: 2628.01 条/秒
+  批次 7: 处理了 1 条, 耗时: 0.00秒, 速度: 2753.98 条/秒
+  批次 8: 处理了 1 条, 耗时: 0.00秒, 速度: 2739.58 条/秒
+  批次 9: 处理了 1 条, 耗时: 0.00秒, 速度: 2680.07 条/秒
+  批次 10: 处理了 1 条, 耗时: 0.00秒, 速度: 2788.77 条/秒
+
+======================================================================
+Batch Size 1 测试结果:
+  总轨迹数: 10
+  成功处理: 10
+  总耗时: 0.00 秒
+  平均速度: 2469.56 条/秒
+  每条轨迹平均耗时: 0.00 秒
+  生成token总数: 0
+======================================================================
+
+
+======================================================================
+测试 Batch Size: 2
+======================================================================
+准备了 10 条轨迹
+平均每条轨迹有 8.0 条消息
+  批次 1: 处理了 2 条, 耗时: 0.00秒, 速度: 2729.78 条/秒
+  批次 2: 处理了 2 条, 耗时: 0.00秒, 速度: 3066.01 条/秒
+  批次 3: 处理了 2 条, 耗时: 0.00秒, 速度: 3340.74 条/秒
+  批次 4: 处理了 2 条, 耗时: 0.00秒, 速度: 3266.59 条/秒
+  批次 5: 处理了 2 条, 耗时: 0.00秒, 速度: 3258.98 条/秒
+
+======================================================================
+Batch Size 2 测试结果:
+  总轨迹数: 10
+  成功处理: 10
+  总耗时: 0.00 秒
+  平均速度: 3097.71 条/秒
+  每条轨迹平均耗时: 0.00 秒
+  生成token总数: 0
+======================================================================
+
+
+======================================================================
+测试 Batch Size: 4
+======================================================================
+准备了 10 条轨迹
+平均每条轨迹有 8.0 条消息
+  批次 1: 处理了 4 条, 耗时: 0.00秒, 速度: 3231.36 条/秒
+  批次 2: 处理了 4 条, 耗时: 0.00秒, 速度: 3378.42 条/秒
+  批次 3: 处理了 2 条, 耗时: 0.00秒, 速度: 3520.19 条/秒
+
+======================================================================
+Batch Size 4 测试结果:
+  总轨迹数: 10
+  成功处理: 10
+  总耗时: 0.00 秒
+  平均速度: 3331.46 条/秒
+  每条轨迹平均耗时: 0.00 秒
+  生成token总数: 0
+======================================================================
+
+
+[5/5] 性能测试汇总
+======================================================================
+Batch Size   总耗时(秒)          吞吐量(条/秒)           每条耗时(秒)        
+----------------------------------------------------------------------
+1            0.00            2469.56            0.00           
+2            0.00            3097.71            0.00           
+4            0.00            3331.46            0.00           
+======================================================================
+
+结果已保存到: benchmark_results_small.json
+
+清理资源...
+✓ 完成！
+/home/ruobai/.local/share/uv/python/cpython-3.11.13-linux-x86_64-gnu/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

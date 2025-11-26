@@ -1,0 +1,137 @@
+nohup: ignoring input
+[05:32:47] ======================================================================
+[05:32:47] 带指标追踪的并发基准测试
+[05:32:47] ======================================================================
+[05:32:47] 模型: Qwen2.5-14B (128k上下文)
+[05:32:47] 配置: GPU 1, 50条轨迹, 50轮对话
+[05:32:47] Batch Size: 2, 3, 4, 6, 8
+[05:32:47] ======================================================================
+[05:32:47] 
+[1/3] 加载配置和数据...
+[05:32:47] ✓ 加载了 50 条轨迹
+[05:32:47]   每条约 48 步
+[05:32:47] 
+[2/3] 加载模型到GPU 1...
+[05:32:47] 配置: 128k上下文窗口
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-26 05:33:23] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:02<00:14,  2.09s/it]
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:04<00:13,  2.26s/it]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:06<00:11,  2.33s/it]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:09<00:09,  2.30s/it]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:11<00:06,  2.28s/it]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:13<00:04,  2.28s/it]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:15<00:02,  2.25s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:16<00:00,  1.89s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:16<00:00,  2.12s/it]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   3%|▎         | 1/36 [00:00<00:15,  2.32it/s]Capturing batches (bs=248 avail_mem=85.70 GB):   3%|▎         | 1/36 [00:00<00:15,  2.32it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   3%|▎         | 1/36 [00:00<00:15,  2.32it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   8%|▊         | 3/36 [00:00<00:05,  6.32it/s]Capturing batches (bs=232 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:05,  6.32it/s]Capturing batches (bs=224 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:05,  6.32it/s]Capturing batches (bs=224 avail_mem=85.68 GB):  14%|█▍        | 5/36 [00:00<00:03,  8.74it/s]Capturing batches (bs=216 avail_mem=85.67 GB):  14%|█▍        | 5/36 [00:00<00:03,  8.74it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  14%|█▍        | 5/36 [00:00<00:03,  8.74it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  19%|█▉        | 7/36 [00:00<00:02, 10.72it/s]Capturing batches (bs=200 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 10.72it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 10.72it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  25%|██▌       | 9/36 [00:00<00:02, 12.32it/s]Capturing batches (bs=184 avail_mem=85.64 GB):  25%|██▌       | 9/36 [00:00<00:02, 12.32it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  25%|██▌       | 9/36 [00:01<00:02, 12.32it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  31%|███       | 11/36 [00:01<00:01, 13.54it/s]Capturing batches (bs=168 avail_mem=85.62 GB):  31%|███       | 11/36 [00:01<00:01, 13.54it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  31%|███       | 11/36 [00:01<00:01, 13.54it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  36%|███▌      | 13/36 [00:01<00:01, 14.11it/s]Capturing batches (bs=152 avail_mem=85.61 GB):  36%|███▌      | 13/36 [00:01<00:01, 14.11it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  36%|███▌      | 13/36 [00:01<00:01, 14.11it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.97it/s]Capturing batches (bs=136 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.97it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.97it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  47%|████▋     | 17/36 [00:01<00:01, 13.99it/s]Capturing batches (bs=120 avail_mem=85.58 GB):  47%|████▋     | 17/36 [00:01<00:01, 13.99it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  47%|████▋     | 17/36 [00:01<00:01, 13.99it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.37it/s]Capturing batches (bs=104 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.37it/s]Capturing batches (bs=96 avail_mem=85.56 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.37it/s] Capturing batches (bs=96 avail_mem=85.56 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.42it/s]Capturing batches (bs=88 avail_mem=85.55 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.42it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.42it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.42it/s]Capturing batches (bs=72 avail_mem=85.53 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.42it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.42it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  69%|██████▉   | 25/36 [00:02<00:00, 14.60it/s]Capturing batches (bs=56 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:02<00:00, 14.60it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:02<00:00, 14.60it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.83it/s]Capturing batches (bs=40 avail_mem=85.50 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.83it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.83it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  81%|████████  | 29/36 [00:02<00:00, 15.00it/s]Capturing batches (bs=24 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 15.00it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 15.00it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.52it/s]Capturing batches (bs=12 avail_mem=85.47 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.52it/s]Capturing batches (bs=8 avail_mem=85.46 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.52it/s] Capturing batches (bs=8 avail_mem=85.46 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.23it/s]Capturing batches (bs=4 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.23it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.23it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.27it/s]Capturing batches (bs=1 avail_mem=85.44 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.27it/s]Capturing batches (bs=1 avail_mem=85.44 GB): 100%|██████████| 36/36 [00:02<00:00, 13.05it/s]
+[05:34:15] ✓ 模型加载完成! 88.0秒
+[05:34:15] 
+GPU 1显存:
+1, 55734 MiB
+[05:34:15] 
+[3/3] 测试不同Batch Size (并发数)...
+[05:34:15] Metadata保存到: metrics_gpu1_50traj_50turns.jsonl
+[05:34:15] 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[05:34:15] 开始测试 Batch Size = 2
+[05:34:15] 
+======================================================================
+[05:34:15] 测试 Batch Size (并发数): 2
+[05:34:15] ======================================================================
+[05:34:15] 准备数据...
+[05:34:15]   准备: 10/50
+[05:34:15]   准备: 20/50
+[05:34:15]   准备: 30/50
+[05:34:15]   准备: 40/50
+[05:34:15]   准备: 50/50
+[05:34:15] ✓ 数据准备完成
+[05:34:15]   平均env时间: 20.22秒/轨迹
+[05:34:15] 开始并发推理（并发数=2）...
+[05:46:22]   进度: 10/50 (20%) 速度: 0.01条/秒 Token吞吐: 64.46tok/秒 用时: 726.7秒
+[05:59:00]   进度: 20/50 (40%) 速度: 0.01条/秒 Token吞吐: 65.23tok/秒 用时: 1484.9秒
+[06:11:43]   进度: 30/50 (60%) 速度: 0.01条/秒 Token吞吐: 68.49tok/秒 用时: 2248.1秒
+[06:23:42]   进度: 40/50 (80%) 速度: 0.01条/秒 Token吞吐: 70.42tok/秒 用时: 2967.2秒
+[06:36:10]   进度: 50/50 (100%) 速度: 0.01条/秒 Token吞吐: 70.61tok/秒 用时: 3715.3秒
+[06:36:10] 
+结果:
+[06:36:10]   成功: 50/50
+[06:36:10]   总耗时: 3715.31秒
+[06:36:10]   轨迹吞吐: 0.01条/秒
+[06:36:10]   Token吞吐: 70.61tok/秒
+[06:36:10]   每条耗时: 74.31秒
+[06:36:10]   总tokens: 262341
+[06:36:10]   平均: 5247 tokens/轨迹
+[06:36:10]   平均: 104.9 tokens/轮
+[06:36:10]   Env时间: 20.22秒/轨迹
+[06:36:10]   时间序列点数: 50
+[06:36:10] ======================================================================
+[06:36:12] 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[06:36:12] 开始测试 Batch Size = 3
+[06:36:12] 
+======================================================================
+[06:36:12] 测试 Batch Size (并发数): 3
+[06:36:12] ======================================================================
+[06:36:12] 准备数据...
+[06:36:12]   准备: 10/50
+[06:36:12]   准备: 20/50
+[06:36:12]   准备: 30/50
+[06:36:12]   准备: 40/50
+[06:36:12]   准备: 50/50
+[06:36:12] ✓ 数据准备完成
+[06:36:12]   平均env时间: 20.22秒/轨迹
+[06:36:12] 开始并发推理（并发数=3）...
+[06:47:56]   进度: 10/50 (20%) 速度: 0.01条/秒 Token吞吐: 74.37tok/秒 用时: 703.1秒
+[06:56:35]   进度: 20/50 (40%) 速度: 0.02条/秒 Token吞吐: 90.04tok/秒 用时: 1222.1秒
+[07:05:18]   进度: 30/50 (60%) 速度: 0.02条/秒 Token吞吐: 90.89tok/秒 用时: 1745.9秒
+[07:13:48]   进度: 40/50 (80%) 速度: 0.02条/秒 Token吞吐: 94.39tok/秒 用时: 2255.5秒
+[07:24:03]   进度: 50/50 (100%) 速度: 0.02条/秒 Token吞吐: 95.16tok/秒 用时: 2870.2秒
+[07:24:03] 
+结果:
+[07:24:03]   成功: 50/50
+[07:24:03]   总耗时: 2870.18秒
+[07:24:03]   轨迹吞吐: 0.02条/秒
+[07:24:03]   Token吞吐: 95.16tok/秒
+[07:24:03]   每条耗时: 57.40秒
+[07:24:03]   总tokens: 273123
+[07:24:03]   平均: 5462 tokens/轨迹
+[07:24:03]   平均: 109.2 tokens/轮
+[07:24:03]   Env时间: 20.22秒/轨迹
+[07:24:03]   时间序列点数: 50
+[07:24:03] ======================================================================
+[07:24:05] 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[07:24:05] 开始测试 Batch Size = 4
+[07:24:05] 
+======================================================================
+[07:24:05] 测试 Batch Size (并发数): 4
+[07:24:05] ======================================================================
+[07:24:05] 准备数据...
+[07:24:05]   准备: 10/50
+[07:24:05]   准备: 20/50
+[07:24:05]   准备: 30/50
+[07:24:05]   准备: 40/50
+[07:24:05]   准备: 50/50
+[07:24:05] ✓ 数据准备完成
+[07:24:05]   平均env时间: 20.22秒/轨迹
+[07:24:05] 开始并发推理（并发数=4）...
+[07:33:32]   进度: 10/50 (20%) 速度: 0.02条/秒 Token吞吐: 78.67tok/秒 用时: 567.0秒
+[07:40:27]   进度: 20/50 (40%) 速度: 0.02条/秒 Token吞吐: 103.46tok/秒 用时: 982.4秒
+[2025-11-26 07:47:46] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='9c19a22fe73946e3a64143f5e6dedf97'
+[2025-11-26 07:47:46] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='8c7305d443f244129ad3e175d25e8e3d'
+[2025-11-26 07:47:46] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='1c3d8ec4ac1b422f8166d5cc4336da62'
+[2025-11-26 07:47:46] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='52bf292a12fd4929abb829783b0638ed'

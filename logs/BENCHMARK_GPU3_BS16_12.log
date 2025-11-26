@@ -1,0 +1,90 @@
+nohup: ignoring input
+[08:21:23] ======================================================================
+[08:21:23] 🔬 每轮记录版本 - 精确追踪基准测试
+[08:21:23] ======================================================================
+[08:21:23] 📌 特性: 每完成一轮assistant生成就记录一次
+[08:21:23] 📊 追踪: token吞吐量、前缀长度、并发数变化
+[08:21:23] ======================================================================
+[08:21:23] 🤖 模型: Qwen2.5-14B (128k上下文)
+[08:21:23] 🎯 配置: GPU 3 | 50条轨迹 | 50轮对话
+[08:21:23] 🔢 测试: Batch Size = [16, 12]
+[08:21:23] ⚡ 优化: 88%显存利用 + 131k token cache
+[08:21:23] ======================================================================
+[08:21:23] 
+[1/3] 加载...
+[08:21:24] ✓ 50条轨迹
+[08:21:24] 
+[2/3] 加载模型...
+[08:21:24] 优化配置: 提高显存利用率
+[08:21:24] 使用端口: 30030
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-26 08:21:34] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:00<00:04,  1.63it/s]
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:01<00:04,  1.39it/s]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:02<00:03,  1.31it/s]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:03<00:03,  1.29it/s]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:03<00:02,  1.27it/s]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:04<00:01,  1.25it/s]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:05<00:00,  1.23it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:05<00:00,  1.45it/s]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:05<00:00,  1.35it/s]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=85.85 GB):   3%|▎         | 1/36 [00:00<00:06,  5.40it/s]Capturing batches (bs=248 avail_mem=85.70 GB):   3%|▎         | 1/36 [00:00<00:06,  5.40it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   3%|▎         | 1/36 [00:00<00:06,  5.40it/s]Capturing batches (bs=240 avail_mem=85.69 GB):   8%|▊         | 3/36 [00:00<00:03, 10.39it/s]Capturing batches (bs=232 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:03, 10.39it/s]Capturing batches (bs=224 avail_mem=85.68 GB):   8%|▊         | 3/36 [00:00<00:03, 10.39it/s]Capturing batches (bs=224 avail_mem=85.68 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.84it/s]Capturing batches (bs=216 avail_mem=85.67 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.84it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  14%|█▍        | 5/36 [00:00<00:02, 11.84it/s]Capturing batches (bs=208 avail_mem=85.66 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.64it/s]Capturing batches (bs=200 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.64it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 12.64it/s]Capturing batches (bs=192 avail_mem=85.65 GB):  25%|██▌       | 9/36 [00:00<00:02, 13.26it/s]Capturing batches (bs=184 avail_mem=85.64 GB):  25%|██▌       | 9/36 [00:00<00:02, 13.26it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  25%|██▌       | 9/36 [00:00<00:02, 13.26it/s]Capturing batches (bs=176 avail_mem=85.63 GB):  31%|███       | 11/36 [00:00<00:01, 13.89it/s]Capturing batches (bs=168 avail_mem=85.62 GB):  31%|███       | 11/36 [00:00<00:01, 13.89it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  31%|███       | 11/36 [00:00<00:01, 13.89it/s]Capturing batches (bs=160 avail_mem=85.62 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.91it/s]Capturing batches (bs=152 avail_mem=85.61 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.91it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.91it/s]Capturing batches (bs=144 avail_mem=85.60 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.01it/s]Capturing batches (bs=136 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.01it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  42%|████▏     | 15/36 [00:01<00:01, 14.01it/s]Capturing batches (bs=128 avail_mem=85.59 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.04it/s]Capturing batches (bs=120 avail_mem=85.58 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.04it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.04it/s]Capturing batches (bs=112 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.24it/s]Capturing batches (bs=104 avail_mem=85.57 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.24it/s]Capturing batches (bs=96 avail_mem=85.56 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.24it/s] Capturing batches (bs=96 avail_mem=85.56 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.16it/s]Capturing batches (bs=88 avail_mem=85.55 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.16it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.16it/s]Capturing batches (bs=80 avail_mem=85.54 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.00it/s]Capturing batches (bs=72 avail_mem=85.53 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.00it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.00it/s]Capturing batches (bs=64 avail_mem=85.52 GB):  69%|██████▉   | 25/36 [00:01<00:00, 13.99it/s]Capturing batches (bs=56 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:01<00:00, 13.99it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  69%|██████▉   | 25/36 [00:01<00:00, 13.99it/s]Capturing batches (bs=48 avail_mem=85.51 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.07it/s]Capturing batches (bs=40 avail_mem=85.50 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.07it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.07it/s]Capturing batches (bs=32 avail_mem=85.49 GB):  81%|████████  | 29/36 [00:02<00:00, 14.15it/s]Capturing batches (bs=24 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 14.15it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  81%|████████  | 29/36 [00:02<00:00, 14.15it/s]Capturing batches (bs=16 avail_mem=85.48 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.03it/s]Capturing batches (bs=12 avail_mem=85.47 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.03it/s]Capturing batches (bs=8 avail_mem=85.46 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.03it/s] Capturing batches (bs=8 avail_mem=85.46 GB):  92%|█████████▏| 33/36 [00:02<00:00, 13.66it/s]Capturing batches (bs=4 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 13.66it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  92%|█████████▏| 33/36 [00:02<00:00, 13.66it/s]Capturing batches (bs=2 avail_mem=85.45 GB):  97%|█████████▋| 35/36 [00:02<00:00, 14.55it/s]Capturing batches (bs=1 avail_mem=85.44 GB):  97%|█████████▋| 35/36 [00:02<00:00, 14.55it/s]Capturing batches (bs=1 avail_mem=85.44 GB): 100%|██████████| 36/36 [00:02<00:00, 13.66it/s]
+[08:22:08] ✓ 44.0秒
+[08:22:08] 
+GPU 3显存使用:
+3, 55734, 143771
+[08:22:08] 
+💡 优化说明:
+[08:22:08]   • mem_fraction=0.88: 充分利用显存空间 (vs 默认0.8)
+[08:22:08]   • max_total_tokens=131k: 更大的KV cache容量
+[08:22:08]   • SGLang自动prefix caching: 复用共享前缀提高效率
+[08:22:08] 
+[3/3] 测试...
+[08:22:08] 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[08:22:08] Batch Size 16
+[08:22:08] 
+======================================================================
+[08:22:08] 测试 Batch Size (并发数): 16
+[08:22:08] ======================================================================
+[08:22:08] 准备数据...
+[08:22:08]   准备: 10/50
+[08:22:08]   准备: 20/50
+[08:22:08]   准备: 30/50
+[08:22:08]   准备: 40/50
+[08:22:08]   准备: 50/50
+[08:22:08] ✓ 准备完成, avg env: 20.22秒
+[08:22:08] 开始并发推理（并发数=16）...
+[08:22:08] 注意：每完成一轮就记录一次指标
+[08:49:54]   进度: 5/50 (10%) | 轨迹速度: 0.003条/秒 | Token吞吐: 52.51tok/秒 | 已用时: 1665.9秒 | 平均: 333.2秒/条
+[08:50:12]   进度: 10/50 (20%) | 轨迹速度: 0.006条/秒 | Token吞吐: 52.33tok/秒 | 已用时: 1683.9秒 | 平均: 168.4秒/条
+[08:50:43]   进度: 15/50 (30%) | 轨迹速度: 0.009条/秒 | Token吞吐: 52.41tok/秒 | 已用时: 1714.8秒 | 平均: 114.3秒/条
+[2025-11-26 09:05:12] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='788179a93220458eac40029aa717901d'
+[2025-11-26 09:05:12] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='8eb20ba616a84373a508a4ba284d2c1e'
+[2025-11-26 09:05:12] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='832644fe25a14a14a5f81ccf13eba77d'
+[2025-11-26 09:05:12] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='a5778bc4c85f45cc94068483b7863021'
+[2025-11-26 09:05:13] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='fde3ebb04a7b4d00aad1a017c55c1c10'
+[2025-11-26 09:05:13] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='387cc16eaca24d1d8bd83f50200c2743'
+[2025-11-26 09:05:13] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='b4753057bb0b46898735c598c17651b1'
+[2025-11-26 09:05:14] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='d203a6c43d0c48e0bc55998e84c1f65a'
+[2025-11-26 09:05:14] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='bb8d7e71225b42da9f181ae5de3c6028'
+[2025-11-26 09:05:14] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='0222c35e9a804e18b04137ab8f9096eb'
+[2025-11-26 09:05:14] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='0b92063c38ea47978b6687e03ed1740b'
+[2025-11-26 09:05:14] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='255598f6ac7d46c493d890486b7bfe74'
+[2025-11-26 09:05:15] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='f68ee04597174a09860a734a57b3b984'
+[2025-11-26 09:05:15] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='75a32a785415421d87be184be310ef07'
+[2025-11-26 09:05:15] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='09a1dfd9ea1541eca8320aabcd7dbb73'
+[2025-11-26 09:05:15] [http_server] Error: Request is disconnected from the client side (type 1). Abort request obj.rid='c2a24a6a7c7c4f3281cc9ad869134cbc'

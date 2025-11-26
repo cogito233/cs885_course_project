@@ -1,0 +1,30 @@
+{
+  "test_info": {
+    "model_path": "/data/minimax-dialogue/users/ruobai/cogito/base_model/R2EGym-7B-Agent",
+    "gpu_device": "GPU 3",
+    "num_trajectories": 50,
+    "num_turns": 50,
+    "batch_size": 128,
+    "model_load_time": 42.53919315338135,
+    "test_timestamp": "2025-11-25 08:49:45",
+    "test_type": "constrained multi-turn generation with forced gen()"
+  },
+  "result": {
+    "batch_size": 128,
+    "num_turns": 50,
+    "num_trajectories": 50,
+    "processed": 50,
+    "failed": 0,
+    "total_time": 0.07298541069030762,
+    "throughput": 685.068420210177,
+    "avg_time_per_trajectory": 0.0014597082138061524,
+    "total_gen_tokens": 0,
+    "avg_tokens_per_trajectory": 0.0,
+    "avg_tokens_per_turn": 0.0,
+    "total_gen_time": 0.07253265380859375,
+    "avg_gen_time_per_trajectory": 0.001450653076171875,
+    "avg_env_time_per_trajectory": 20.216140999794007,
+    "total_env_time": 1010.8070499897003,
+    "avg_original_tokens_per_trajectory": 8859.52
+  }
+}

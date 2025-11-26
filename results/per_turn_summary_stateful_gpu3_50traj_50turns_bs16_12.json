@@ -1,0 +1,44 @@
+{
+  "model": "Qwen2.5-14B",
+  "gpu": 3,
+  "num_trajectories": 50,
+  "num_turns": 50,
+  "model_load_time": 44.08528923988342,
+  "timestamp": "2025-11-26 12:01:49",
+  "optimization": "Stateful KV Cache - Runtime maintains KV state, avoids per-turn full prefill",
+  "note": "Each trajectory generates all turns in one Runtime call, KV cache automatically reused",
+  "throughput_metric": "sliding_window (10s) reflects real-time performance",
+  "metadata_file": "per_turn_metrics_stateful_gpu3_50traj_50turns_bs16_12.jsonl",
+  "results": [
+    {
+      "batch_size": 16,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 5116.06724190712,
+      "avg_time_per_traj": 102.3213448381424,
+      "throughput_traj_per_sec": 0.009773131906953097,
+      "throughput_token_per_sec": 52.11483496855111,
+      "total_tokens": 266623,
+      "avg_tokens_per_traj": 5332.46,
+      "avg_tokens_per_turn": 106.64920000000001,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    },
+    {
+      "batch_size": 12,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 5028.854192018509,
+      "avg_time_per_traj": 100.57708384037018,
+      "throughput_traj_per_sec": 0.009942622730910941,
+      "throughput_token_per_sec": 54.00872437921747,
+      "total_tokens": 271602,
+      "avg_tokens_per_traj": 5432.04,
+      "avg_tokens_per_turn": 108.6408,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    }
+  ]
+}

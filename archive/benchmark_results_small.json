@@ -1,0 +1,34 @@
+{
+  "model_path": "/data/minimax-dialogue/users/ruobai/cogito/base_model/R2EGym-7B-Agent",
+  "num_trajectories": 10,
+  "results": [
+    {
+      "batch_size": 1,
+      "total_trajectories": 10,
+      "processed": 10,
+      "total_time": 0.0040493011474609375,
+      "throughput": 2469.5619406500236,
+      "avg_time_per_trajectory": 0.00040493011474609377,
+      "total_tokens": 0
+    },
+    {
+      "batch_size": 2,
+      "total_trajectories": 10,
+      "processed": 10,
+      "total_time": 0.0032281875610351562,
+      "throughput": 3097.7134416543577,
+      "avg_time_per_trajectory": 0.0003228187561035156,
+      "total_tokens": 0
+    },
+    {
+      "batch_size": 4,
+      "total_trajectories": 10,
+      "processed": 10,
+      "total_time": 0.003001689910888672,
+      "throughput": 3331.456711675933,
+      "avg_time_per_trajectory": 0.0003001689910888672,
+      "total_tokens": 0
+    }
+  ],
+  "timestamp": "2025-11-25 08:19:57"
+}

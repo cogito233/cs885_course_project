@@ -1,0 +1,85 @@
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2025-11-25 08:54:22] WARNING server_args.py:1213: Attention backend not explicitly specified. Use fa3 backend by default.
+======================================================================
+深度调试 - 研究token生成问题
+======================================================================
+模型: Qwen3-14B-Base
+时间: 2025-11-25 08:54:13
+
+[1] 加载配置和数据...
+✓ 完成
+
+[2] 加载模型到GPU 3...
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:02<00:16,  2.37s/it]
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:04<00:14,  2.34s/it]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:07<00:11,  2.37s/it]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:09<00:09,  2.30s/it]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:11<00:06,  2.24s/it]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:13<00:04,  2.20s/it]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:15<00:02,  2.16s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:16<00:00,  1.81s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:16<00:00,  2.08s/it]
+
+  0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=33.93 GB):   0%|          | 0/36 [00:00<?, ?it/s]Capturing batches (bs=256 avail_mem=33.93 GB):   3%|▎         | 1/36 [00:00<00:11,  3.10it/s]Capturing batches (bs=248 avail_mem=33.78 GB):   3%|▎         | 1/36 [00:00<00:11,  3.10it/s]Capturing batches (bs=240 avail_mem=33.76 GB):   3%|▎         | 1/36 [00:00<00:11,  3.10it/s]Capturing batches (bs=240 avail_mem=33.76 GB):   8%|▊         | 3/36 [00:00<00:04,  7.50it/s]Capturing batches (bs=232 avail_mem=33.74 GB):   8%|▊         | 3/36 [00:00<00:04,  7.50it/s]Capturing batches (bs=224 avail_mem=33.72 GB):   8%|▊         | 3/36 [00:00<00:04,  7.50it/s]Capturing batches (bs=224 avail_mem=33.72 GB):  14%|█▍        | 5/36 [00:00<00:03,  9.84it/s]Capturing batches (bs=216 avail_mem=33.71 GB):  14%|█▍        | 5/36 [00:00<00:03,  9.84it/s]Capturing batches (bs=208 avail_mem=33.69 GB):  14%|█▍        | 5/36 [00:00<00:03,  9.84it/s]Capturing batches (bs=208 avail_mem=33.69 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.30it/s]Capturing batches (bs=200 avail_mem=33.67 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.30it/s]Capturing batches (bs=192 avail_mem=33.65 GB):  19%|█▉        | 7/36 [00:00<00:02, 11.30it/s]Capturing batches (bs=192 avail_mem=33.65 GB):  25%|██▌       | 9/36 [00:00<00:02, 12.35it/s]Capturing batches (bs=184 avail_mem=33.64 GB):  25%|██▌       | 9/36 [00:00<00:02, 12.35it/s]Capturing batches (bs=176 avail_mem=33.64 GB):  25%|██▌       | 9/36 [00:00<00:02, 12.35it/s]Capturing batches (bs=176 avail_mem=33.64 GB):  31%|███       | 11/36 [00:01<00:01, 13.39it/s]Capturing batches (bs=168 avail_mem=33.63 GB):  31%|███       | 11/36 [00:01<00:01, 13.39it/s]Capturing batches (bs=160 avail_mem=33.61 GB):  31%|███       | 11/36 [00:01<00:01, 13.39it/s]Capturing batches (bs=160 avail_mem=33.61 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.76it/s]Capturing batches (bs=152 avail_mem=33.60 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.76it/s]Capturing batches (bs=144 avail_mem=33.58 GB):  36%|███▌      | 13/36 [00:01<00:01, 13.76it/s]Capturing batches (bs=144 avail_mem=33.58 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.95it/s]Capturing batches (bs=136 avail_mem=33.58 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.95it/s]Capturing batches (bs=128 avail_mem=33.56 GB):  42%|████▏     | 15/36 [00:01<00:01, 13.95it/s]Capturing batches (bs=128 avail_mem=33.56 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.09it/s]Capturing batches (bs=120 avail_mem=33.55 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.09it/s]Capturing batches (bs=112 avail_mem=33.54 GB):  47%|████▋     | 17/36 [00:01<00:01, 14.09it/s]Capturing batches (bs=112 avail_mem=33.54 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.44it/s]Capturing batches (bs=104 avail_mem=33.54 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.44it/s]Capturing batches (bs=96 avail_mem=33.53 GB):  53%|█████▎    | 19/36 [00:01<00:01, 14.44it/s] Capturing batches (bs=96 avail_mem=33.53 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.46it/s]Capturing batches (bs=88 avail_mem=33.52 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.46it/s]Capturing batches (bs=80 avail_mem=33.51 GB):  58%|█████▊    | 21/36 [00:01<00:01, 14.46it/s]Capturing batches (bs=80 avail_mem=33.51 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.44it/s]Capturing batches (bs=72 avail_mem=33.50 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.44it/s]Capturing batches (bs=64 avail_mem=33.49 GB):  64%|██████▍   | 23/36 [00:01<00:00, 14.44it/s]Capturing batches (bs=64 avail_mem=33.49 GB):  69%|██████▉   | 25/36 [00:01<00:00, 14.56it/s]Capturing batches (bs=56 avail_mem=33.49 GB):  69%|██████▉   | 25/36 [00:01<00:00, 14.56it/s]Capturing batches (bs=48 avail_mem=33.48 GB):  69%|██████▉   | 25/36 [00:02<00:00, 14.56it/s]Capturing batches (bs=48 avail_mem=33.48 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.72it/s]Capturing batches (bs=40 avail_mem=33.47 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.72it/s]Capturing batches (bs=32 avail_mem=33.46 GB):  75%|███████▌  | 27/36 [00:02<00:00, 14.72it/s]Capturing batches (bs=32 avail_mem=33.46 GB):  81%|████████  | 29/36 [00:02<00:00, 14.86it/s]Capturing batches (bs=24 avail_mem=33.45 GB):  81%|████████  | 29/36 [00:02<00:00, 14.86it/s]Capturing batches (bs=16 avail_mem=33.45 GB):  81%|████████  | 29/36 [00:02<00:00, 14.86it/s]Capturing batches (bs=16 avail_mem=33.45 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.75it/s]Capturing batches (bs=12 avail_mem=33.44 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.75it/s]Capturing batches (bs=8 avail_mem=33.43 GB):  86%|████████▌ | 31/36 [00:02<00:00, 13.75it/s] Capturing batches (bs=8 avail_mem=33.43 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.31it/s]Capturing batches (bs=4 avail_mem=33.42 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.31it/s]Capturing batches (bs=2 avail_mem=33.42 GB):  92%|█████████▏| 33/36 [00:02<00:00, 14.31it/s]Capturing batches (bs=2 avail_mem=33.42 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.14it/s]Capturing batches (bs=1 avail_mem=33.41 GB):  97%|█████████▋| 35/36 [00:02<00:00, 15.14it/s]Capturing batches (bs=1 avail_mem=33.41 GB): 100%|██████████| 36/36 [00:02<00:00, 13.38it/s]
+Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/debug_generation.py", line 233, in main
+    print(f"State keys: {list(state.keys())}")
+                              ^^^^^^^^^^
+AttributeError: 'ProgramState' object has no attribute 'keys'
+✓ 模型加载完成！耗时: 52.01秒
+
+======================================================================
+测试1: 最简单的单轮生成
+======================================================================
+User: Hello! Please introduce yourself in 2-3 sentences.
+✗ 测试1失败: 'ProgramState' object has no attribute 'get'
+
+======================================================================
+测试2: 简单的2轮对话
+======================================================================
+System: You are a helpful assistant.
+User 1: What is Python?
+User 2: Give me a simple example.
+
+生成结果:
+✗ 测试2失败: 'ProgramState' object has no attribute 'keys'
+
+======================================================================
+测试3: 真实轨迹数据 - 3轮对话
+======================================================================
+准备了 3 轮对话数据
+
+生成结果:
+  turn_0: ⚠️ 未生成
+  turn_1: ⚠️ 未生成
+  turn_2: ⚠️ 未生成
+
+总Token数: 0
+✗ 测试3失败: 'ProgramState' object has no attribute 'keys'
+
+======================================================================
+诊断信息
+======================================================================
+SGLang版本: 0.5.5.post3
+Runtime类型: <class 'sglang.lang.backend.runtime_endpoint.Runtime'>
+Traceback (most recent call last):
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/debug_generation.py", line 259, in <module>
+    main()
+  File "/minimax-dialogue/users/ruobai/cogito_dev/course_project_854/debug_generation.py", line 250, in main
+    print(f"Backend: {type(sgl.get_default_backend())}")
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sglang' has no attribute 'get_default_backend'. Did you mean: 'set_default_backend'?
+/home/ruobai/.local/share/uv/python/cpython-3.11.13-linux-x86_64-gnu/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

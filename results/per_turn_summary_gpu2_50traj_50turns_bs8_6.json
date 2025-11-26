@@ -1,0 +1,42 @@
+{
+  "model": "Qwen2.5-14B",
+  "gpu": 2,
+  "num_trajectories": 50,
+  "num_turns": 50,
+  "model_load_time": 43.53448271751404,
+  "timestamp": "2025-11-26 10:35:40",
+  "note": "Per-turn recording: each assistant generation triggers one record",
+  "metadata_file": "per_turn_metrics_gpu2_50traj_50turns_bs8_6.jsonl",
+  "results": [
+    {
+      "batch_size": 8,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 4564.088206291199,
+      "avg_time_per_traj": 91.28176412582397,
+      "throughput_traj_per_sec": 0.010955090642437486,
+      "throughput_token_per_sec": 58.394796058635926,
+      "total_tokens": 266519,
+      "avg_tokens_per_traj": 5330.38,
+      "avg_tokens_per_turn": 106.6076,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    },
+    {
+      "batch_size": 6,
+      "num_turns": 50,
+      "processed": 50,
+      "failed": 0,
+      "total_time": 3753.386875629425,
+      "avg_time_per_traj": 75.06773751258851,
+      "throughput_traj_per_sec": 0.013321301975196799,
+      "throughput_token_per_sec": 73.42142154045517,
+      "total_tokens": 275579,
+      "avg_tokens_per_traj": 5511.58,
+      "avg_tokens_per_turn": 110.2316,
+      "avg_env_time": 20.216140999794007,
+      "records_per_traj": 50
+    }
+  ]
+}

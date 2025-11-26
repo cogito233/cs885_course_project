@@ -1,0 +1,6 @@
+sglang>=0.5.5
+torch>=2.8.0
+transformers>=4.57.1
+matplotlib>=3.5.0
+numpy>=1.21.0
+pyyaml>=6.0
